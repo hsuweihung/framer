@@ -1,0 +1,516 @@
+extends ../layouts/layout_2.pug
+block page-title
+  title U 簡報
+block content
+  // banner start
+  section.header
+    .container
+      nav.navbar.navbar-expand-md.navbar-light
+        a.navbar-brand.web(href='../index.html') 
+          img.change(src='../img/header/GXC_white.svg')
+        a.navbar-brand.web(href='index.html') 
+          img.svg(src='../img/header/uc_white.svg')
+        a.navbar-brand.mobile(href='../index.html') 
+          img(src='../img/header/GXC_colors.svg')
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#u-nav', aria-controls='u-nav', aria-expanded='true', )
+          span.navbar-toggler-icon
+        #u-nav.collapse.navbar-collapse
+          .nav-bg
+          ul.navbar-nav
+            div.nav-close.close.mobile(data-toggle='collapse', data-target='#u-nav', aria-controls='u-nav', aria-expanded='false', )
+              span &times;
+            a.mobile(href='../index.html') 
+              img(src='../img/header/GXC_colors.svg')
+            li.nav-item
+              a.mobile(href='index.html') U 產品
+            li.nav-item
+              a(href='p1.html') U 會議
+            li.nav-item
+              a.active(href='p2.html') U 簡報
+            li.nav-item
+              a(href='p3.html') U 通訊
+            li.nav-item
+              span.button#nav-login(onclick="location.href='https://u.cyberlink.com/user/signin'") 登入
+  section.banner
+    #sd-banner.carousel.slide(data-ride='carousel')
+      // Indicators
+      ol.carousel-indicators
+        li.active(data-target='#sd-banner', data-slide-to='0')
+        li(data-target='#sd-banner', data-slide-to='1')
+        li(data-target='#sd-banner', data-slide-to='2')
+      // Slides
+      .carousel-inner(role='listbox')
+        .carousel-item.w-100.active
+          .bg-mask
+          .bg(style='background:url(../img/banner/uc_p2/banner_uc_p2_01.png) no-repeat center; background-size: cover')
+          a.banner-container(href="")
+            .text
+              h2 Ｕ簡報
+              p 企業直播平台首選，遠距教學最佳利器
+
+
+        .carousel-item.w-100
+          .bg-mask
+          .bg(style='background:url(../img/banner/uc_p2/banner_uc_p2_02.png) no-repeat center; background-size: cover')
+          a.banner-container(href="")
+            .text
+              h2 Ｕ簡報
+              p 企業直播平台首選，遠距教學最佳利器
+              
+
+        .carousel-item.w-100
+          .bg-mask
+          .bg(style='background:url(../img/banner/uc_p2/banner_uc_p2_03.png) no-repeat center; background-size: cover')
+          a.banner-container(href="")
+            .text
+              h2 Ｕ簡報
+              p 企業直播平台首選，遠距教學最佳利器
+              
+  // article_b1
+  section.article_b1.py-6
+    .container
+      .row
+        .col-12.col-md-6
+          img(src='../img/article_b/uc/article_b_uc_p2_01.svg' alt='')
+        .col-12.col-md-6
+          div.text
+            h3.b-padding 事先掌握報名狀況
+            ul
+              li 整合線上報名功能，讓主辦單位能事先掌控報名人數。
+              li 主辦單位可選擇開放，或設定觀看權限。
+              li 可選擇不同報名審核機制，自動核准所有人 / 僅開放特定網域，或預先匯入名單。
+  // icon_a
+  section.icon_a.bg-gray.py-6
+    .container
+      .row
+        .col-12.text-center
+          .title-area
+            h3 輕鬆進行遠距簡報
+            //- p 觀眾可透過專用軟體觀看簡報直播
+      .card-area
+        .row
+          .col-12.col-md-4
+            .icon-card
+              img(src='../img/ic_a/uc/ic_a_uc_p2_11.svg' alt='')
+              p 整合 PowerPoint 投影片、視訊攝影機及桌面分享，輕鬆進行遠距簡報。
+            div.card-bottom-m
+          .col-12.col-md-4
+            .icon-card
+              img(src='../img/ic_a/uc/ic_a_uc_p2_12.svg' alt='')
+              p 使用畫筆功能在簡報中即時標注重點。
+            div.card-bottom-m
+          .col-12.col-md-4
+            .icon-card
+              img(src='../img/ic_a/uc/ic_a_uc_p2_13.svg' alt='')
+              p 超低視訊延遲，讓講者與觀眾互動零時差。
+            div.card-bottom-m
+          .col-12.col-md-4
+            .icon-card
+              img(src='../img/ic_a/uc/ic_a_uc_p2_13.svg' alt='')
+              p 提供高達 500 人的同時線上觀看人數。另有客製化系統服務，將同時線上觀看人數提高至 10,000。
+            div.card-bottom-m
+          .col-12.col-md-4
+            .icon-card
+              img(src='../img/ic_a/uc/ic_a_uc_p2_13.svg' alt='')
+              p 雙鏡頭支援，可於簡報中進行切換視訊鏡頭。
+            div.card-bottom-m
+          .col-12.col-md-4
+            .icon-card
+              img(src='../img/ic_a/uc/ic_a_uc_p2_13.svg' alt='')
+              p 支援透過 HDMI 擷取卡輸入 DSLR 等外部訊號。
+            div.card-bottom-m
+
+  // article_b2
+  section.article_b2.py-6
+    .container
+      .row
+        .col-12.col-md-6
+          img(src='../img/article_b/uc/article_b_uc_p2_02.svg' alt='')
+        .col-12.col-md-6
+          div.text
+            h3.b-padding 預先錄製＆編輯內容
+            ul
+              li 透過預錄功能事先錄製簡報，再排程播放。
+              li 正式直播前，隨時進階剪輯或重錄特定投影片內容。
+              li 直播時，可彈性播放預錄內容或切換至視訊鏡頭，與觀眾互動或即時補充。
+  // icon_a
+  section.icon_a.bg-gray.py-6
+    .container
+      .row
+        .col-12.text-center
+          .title-area
+            h3 輕鬆安排直播活動
+            //- p 透過雲端隨選服務，觀眾可於直播結束後立即觀看存檔影片
+      .card-area
+        .row
+          .col-12.col-md-3
+            .icon-card
+              img(src='../img/ic_a/uc/ic_a_uc_p2_11.svg' alt='')
+              p 預先建立直播活動，讓您可提前將直播連結發送給觀眾、客戶或學員。
+            div.card-bottom
+          .col-12.col-md-3
+            .icon-card
+              img(src='../img/ic_a/uc/ic_a_uc_p2_12.svg' alt='')
+              p 無須專屬軟體，觀眾可透過瀏覽器直接觀看直播活動。
+            div.card-bottom
+          .col-12.col-md-3
+            .icon-card
+              img(src='../img/ic_a/uc/ic_a_uc_p2_13.svg' alt='')
+              p 即播即錄，可於直播後儲存至雲端視訊隨選服務，也可在本機保存高畫質影片。
+            div.card-bottom
+          .col-12.col-md-3
+            .icon-card
+              img(src='../img/ic_a/uc/ic_a_uc_p2_14.svg' alt='')
+              p 透過雲端隨選服務，觀眾可於直播結束後立刻觀看存檔影片，並提供功能強大之自動目錄索引功能。
+            div.card-bottom
+
+  // article_b1
+  section.article_b1.py-6
+    .container
+      .row
+        .col-12.col-md-6
+          img(src='../img/article_b/uc/article_b_uc_p2_03.svg' alt='')
+        .col-12.col-md-6
+          div.text
+            h3.b-padding 講者與觀眾互動流暢
+            ul
+              li 講師可針對不適當的發言內容予以刪除或禁止發言。
+              li 可啟動「舉手發問」功能，透過語音提問互動。
+              li 講師與學員可於聊天室中進行文字交談及分享連結。
+  // icon_a
+  section.icon_a.bg-gray.py-6
+    .container
+      .row
+        .col-12.text-center
+          .title-area
+            h3 團體管理帳戶工具讓資訊一目了然
+            //- p 透過雲端隨選服務，觀眾可於直播結束後立即觀看存檔影片
+      .card-area
+        .row
+          .col-12.col-md-3
+            .icon-card
+              img(src='../img/ic_a/uc/ic_a_uc_p2_11.svg' alt='')
+              p 管理員可檢視組織授權詳細資料，包含合約類型、合約起訖時間及成員數量等，方便進行組織授權合約管理。
+            div.card-bottom
+          .col-12.col-md-3
+            .icon-card
+              img(src='../img/ic_a/uc/ic_a_uc_p2_12.svg' alt='')
+              p 管理員可隨時新增或刪除成員、管理各成員的帳戶類型和角色。
+            div.card-bottom
+          .col-12.col-md-3
+            .icon-card
+              img(src='../img/ic_a/uc/ic_a_uc_p2_13.svg' alt='')
+              p 管理員可輕鬆總覽網路研討會使用量，分析主講人、研討會場次和與會者數目以及團體總使用時間。
+            div.card-bottom
+          .col-12.col-md-3
+            .icon-card
+              img(src='../img/ic_a/uc/ic_a_uc_p2_14.svg' alt='')
+              p 研討會主持人可自訂標頭顯示圖像，打造專屬線上平台。
+            div.card-bottom
+  // article_b2
+  section.article_b2.py-6
+    .container
+      .row
+        .col-12.col-md-6
+          img(src='../img/article_b/uc/article_b_uc_p2_04.svg' alt='')
+        .col-12.col-md-6
+          div.text
+            h3.b-padding 雲端隨選回看
+            ul
+              li 於直播結束時，可存檔為雲端隨選影片，供觀眾回看。
+              li 雲端快速剪輯，讓講師可裁剪直播的空白片段。
+              li 智慧索引功能，能根據簡報元素，自動產生索引。
+  //article_c
+  section.article_c.bg-gray.py-6
+    .container
+      .row
+        .col-12.col-md-6
+          .img
+            img(src='../img/article_c/article_c_uc_01.svg') 
+        .col-12.col-md-6
+          div.text
+            h3 使用手冊
+            p 訊連科技保留隨時修改方案條款之權利，不另行通知。
+            a.gxc-more(href='https://u.cyberlink.com/download')
+              | 進一步了解
+              img.icon(src='../img/ic/common/arrow_right.svg')
+  // price
+  section.price.py-5
+    .container-fluid
+      .row.justify-content-center
+        .title-area
+          h3 解決方案＆價格
+          p 無論是線上直播或視訊會議Ｕ都是您的最佳選擇
+      .row.justify-content-center
+        .col-12
+          div.owl-carousel.owl-theme.owl-loaded
+            .owl-stage-outer.web
+              .owl-stage
+                div.owl-item
+                  .card
+                    .img-card
+                      div.card-bg
+                        img(alt='' src='../img/pricing/uc_p1/pricing_uc_01.png')
+                      div.card-text
+                        h2 Basic
+                        p 免費
+                      ul
+                        li 
+                          img(src='../img/ic/common/check.svg')
+                          p 單次活動 25 人以內
+                        li 
+                          img(src='../img/ic/common/check.svg')
+                          p 單次活動 30 分鐘
+                        li 
+                          img(src='../img/ic/common/check.svg')
+                          p 2GB 雲端儲存空間
+                        span.button(onclick="location.href='https://u.cyberlink.com/download'")
+                          | 下載
+
+                div.owl-item
+                  .card
+                    .img-card
+                      div.card-bg
+                        img(alt='' src='../img/pricing/uc_p1/pricing_uc_02.png')
+                      div.card-text
+                        h2 Pro 100
+                        p 專人洽詢
+                      ul
+                        li 
+                          img(src='../img/ic/common/check.svg')
+                          p 單次活動 100 人以內
+                        li 
+                          img(src='../img/ic/common/check.svg')
+                          p 單次活動 8 小時
+                        li 
+                          img(src='../img/ic/common/check.svg')
+                          p 2GB 雲端儲存空間
+                        li 
+                          img(src='../img/ic/common/check.svg')
+                          p 組織管理工具
+                        span.button(href='' data-toggle='modal' data-target='#uc_p2_popup')
+                          | 立即購買
+
+                div.owl-item
+                  .card
+                    .img-card
+                      div.card-bg
+                        img(alt='' src='../img/pricing/uc_p1/pricing_uc_04.png')
+                      div.card-text
+                        h2 Pro 500
+                        p 專人洽詢
+                      ul
+                        li 
+                          img(src='../img/ic/common/check.svg')
+                          p 單次活動 500 人以內
+                        li 
+                          img(src='../img/ic/common/check.svg')
+                          p 單次活動 8 小時
+                        li 
+                          img(src='../img/ic/common/check.svg')
+                          p 2GB 雲端儲存空間
+                        li 
+                          img(src='../img/ic/common/check.svg')
+                          p 組織管理工具
+                        span.button(href='' data-toggle='modal' data-target='#uc_p2_popup')
+                          | 立即購買
+
+                div.owl-item
+                  .card
+                    .img-card
+                      div.card-bg
+                        img(alt='' src='../img/pricing/uc_p1/pricing_uc_03.png')
+                      div.card-text
+                        h2 商務
+                        p 企業版專屬功能
+                      ul
+                        li 
+                          img(src='../img/ic/common/check.svg')
+                          p 單次活動 10,000 人以內
+                        li 
+                          img(src='../img/ic/common/check.svg')
+                          p 單次活動 8 小時
+                        li 
+                          img(src='../img/ic/common/check.svg')
+                          p 1TB 雲端儲存空間
+                        li 
+                          img(src='../img/ic/common/check.svg')
+                          p 組織管理工具
+                        li 
+                          img(src='../img/ic/common/check.svg')
+                          p 研討會活動分析報表
+                        li 
+                          img(src='../img/ic/common/check.svg')
+                          p 專屬客戶支援服務
+                        li 
+                          img(src='../img/ic/common/check.svg')
+                          p 依您的組織/公司/學校需求提供客製化功能
+                        span.button(href='' data-toggle='modal' data-target='#uc_p2_popup')
+                          | 聯繫我們
+        .col-12.mobile
+          .card
+            .img-card
+              div.card-bg
+                img(alt='' src='../img/pricing/uc_p1/pricing_uc_01.png')
+              div.card-text
+                h2 Basic
+                p 免費
+              ul
+                li 
+                  img(src='../img/ic/common/check.svg')
+                  p 單次活動 25 人以內
+                li 
+                  img(src='../img/ic/common/check.svg')
+                  p 單次活動 30 分鐘
+                li 
+                  img(src='../img/ic/common/check.svg')
+                  p 2GB 雲端儲存空間
+                span.button(href='https://u.cyberlink.com/download')
+                  | 下載
+          div.card-bottom
+        .col-12.mobile
+          .card
+            .img-card
+              div.card-bg
+                img(alt='' src='../img/pricing/uc_p1/pricing_uc_02.png')
+              div.card-text
+                h2 Pro 100
+                p 專人洽詢
+              ul
+                li 
+                  img(src='../img/ic/common/check.svg')
+                  p 單次活動 100 人以內
+                li 
+                  img(src='../img/ic/common/check.svg')
+                  p 單次活動 8 小時
+                li 
+                  img(src='../img/ic/common/check.svg')
+                  p 2GB 雲端儲存空間
+                li 
+                  img(src='../img/ic/common/check.svg')
+                  p 組織管理工具
+                span.button(href='' data-toggle='modal' data-target='#uc_p2_popup')
+                  | 立即購買
+          div.card-bottom
+        .col-12.mobile
+          .card
+            .img-card
+              div.card-bg
+                img(alt='' src='../img/pricing/uc_p1/pricing_uc_03.png')
+              div.card-text
+                h2 Pro 500
+                p 專人洽詢
+              ul
+                li 
+                  img(src='../img/ic/common/check.svg')
+                  p 單次活動 500 人以內
+                li 
+                  img(src='../img/ic/common/check.svg')
+                  p 單次活動 8 小時
+                li 
+                  img(src='../img/ic/common/check.svg')
+                  p 2GB 雲端儲存空間
+                li 
+                  img(src='../img/ic/common/check.svg')
+                  p 組織管理工具
+                span.button(href='' data-toggle='modal' data-target='#uc_p2_popup')
+                  | 立即購買
+          div.card-bottom
+
+        .col-12.mobile
+          .card
+            .img-card
+              div.card-bg
+                img(alt='' src='../img/pricing/uc_p1/pricing_uc_02.png')
+              div.card-text
+                h2 商務
+                p 企業版專屬功能
+              ul
+                li 
+                  img(src='../img/ic/common/check.svg')
+                  p 單次活動 10,000 人以內
+                li 
+                  img(src='../img/ic/common/check.svg')
+                  p 單次活動 8 小時
+                li 
+                  img(src='../img/ic/common/check.svg')
+                  p 1TB 雲端儲存空間
+                li 
+                  img(src='../img/ic/common/check.svg')
+                  p 組織管理工具
+                li 
+                  img(src='../img/ic/common/check.svg')
+                  p 研討會活動分析報表
+                li 
+                  img(src='../img/ic/common/check.svg')
+                  p 專屬客戶支援服務
+                li 
+                  img(src='../img/ic/common/check.svg')
+                  p 依您的組織/公司/學校需求提供客製化功能
+                span.button(href='' data-toggle='modal' data-target='#uc_p2_popup')
+                  | 聯絡我們
+          div.card-bottom
+    #uc_p2_popup.modal.fade.bd-example-modal-lg(tabindex='-1' role='dialog' aria-hidden='true')
+      .modal-dialog.modal-lg.modal-dialog-centered(role='document')
+        .modal-content
+          .modal-body
+            button.close(type='button' data-dismiss='modal' aria-label='Close')
+              span(aria-hidden='true') &times;
+            .content
+              img(src='../img/popup.png')
+            .text-area
+              h2 請與我們的專員聯繫
+              h3 Tel: 0800-080-201
+              p Taiwan-Toll Free 台灣地區免費服務電話
+              h3 Tel: +886-2-3396-1300
+              h3 Fax: +886-2-2394-4041
+              h3 E-mail: chit-sc@cht.com.tw
+  //article_c
+  section.article_c.bg-gray.py-5
+    .container
+      .row
+        .col-12.col-md-6
+          .img
+            img(src='../img/article_c/article_c_uc_02.svg') 
+        .col-12.col-md-6
+          div.text
+            h3 U 簡報各方案比較表
+            p 訊連科技保留隨時修改方案條款之權利，不另行通知。
+            a.gxc-more(href='https://u.cyberlink.com/download')
+              | 進一步了解
+              img.icon(src='../img/ic/common/arrow_right.svg')
+  //card_c
+  section.card_c.py-5
+      .container
+        .title-area
+          h3 Ｕ雲端儲存方案
+          p 儲存方案提供更多雲端儲存空間
+        .row.pb-2
+          .col-12.col-md-6
+            .button
+              button(href='' data-toggle='modal' data-target='#uc_p2_popup')
+                  h2 10 GB
+                  p NT $1,580 /月
+          .col-12.col-md-6
+            .button_2
+              button(href='' data-toggle='modal' data-target='#uc_p2_popup')
+                  h2 100 GB
+                  p NT $4,900 /月
+  //contact
+  section.contact.bg-gray.py-5
+    .row.justify-content-center
+      .col-12.col-md-5.text-center
+        .title-area.text-center
+          h3 專人聯絡我
+          p 留下您的資料，我們將立刻提供專人諮詢服務
+        form(method="post" action="mailto:wishsky13@gmail.com" enctype="Text/Plain")
+          .row.justify-content-center
+            .col-12.col-md-6
+              input#username(type='text' name='username' placeholder='請輸入您的姓名')
+            .col-12.col-md-6
+              input#userphone(type='text' name='userphone' placeholder='請輸入手機號碼')
+            .col-12
+              input#companyname(type='text' name='username' placeholder='請輸入公司名稱')
+          .row.justify-content-center
+            .col-12
+              button.button(type='submit') 送出

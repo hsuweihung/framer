@@ -1,0 +1,191 @@
+extends ../layouts/layout_2.pug
+block page-title
+  title  企業網路服務
+block content
+  section.banner
+    #d-bannar.carousel.slide(data-ride='carousel')
+      // Indicators
+      ol.carousel-indicators
+        li.active(data-target='#d-bannarr', data-slide-to='0')
+        li(data-target='#d-bannar', data-slide-to='1')
+        li(data-target='#d-bannar', data-slide-to='2')
+      // Slides
+      .carousel-inner(role='listbox')
+        .carousel-item.w-100.active
+          .bg-mask
+          .bg(style='background:url(../img/banner/cat_d/banner_cat_d_01.png) no-repeat center; background-size: cover')
+          a.banner-container(href="")
+            .text
+              h2 企業網路服務
+              p 超過 190 個 國家/地區中的 LTE / 4G，提供客戶即時、安全的網路效能
+        .carousel-item.w-100
+          .bg-mask
+          .bg(style='background:url(../img/banner/cat_d/banner_cat_d_02.png) no-repeat center; background-size: cover')
+          a.banner-container(href="")
+            .text
+              h2 企業網路服務
+              p 超過 190 個 國家/地區中的 LTE / 4G，提供客戶即時、安全的網路效能
+        .carousel-item.w-100
+          .bg-mask
+          .bg(style='background:url(../img/banner/cat_d/banner_cat_d_03.png) no-repeat center; background-size: cover')
+          a.banner-container(href="")
+            .text
+              h2 企業網路服務
+              p 超過 190 個 國家/地區中的 LTE / 4G，提供客戶即時、安全的網路效能
+  section.card_e.py-5
+    .container
+      div.title-area
+      div.row
+        div.col-12.col-md-4
+          div.card
+            a.img-card( href='../sd-wan/index.html') 
+              div.card-bg
+                img(alt='',src='../img/card_e/cat_d/card_e_cat_d_sdwan.png')
+              div.card-text_a_e
+                h4.ellipsis
+                  img(alt='', src='../img/ic/cat_d/ic_cat_d_sdwan.svg') 
+                  | SD-WAN
+                p.ellipsis 可靠、高品質的轉數網路設備。
+              p.gxc-more( href='../sd-wan/index.html') 
+                | 進一步了解
+                img(alt='',src='../img/ic/common/arrow_right.svg')
+          div.card-bottom-l
+        div.col-12.col-md-4
+          div.card
+            a.img-card(href="")
+              div.card-bg
+                img(alt='',src='../img/card_e/cat_d/card_e_cat_d_cdn.png')
+              div.card-text_a_e
+                h4.ellipsis
+                  img(alt='', src='../img/ic/cat_d/ic_cat_d_cdn.svg') 
+                  | CDN
+                p.ellipsis 可靠、高品質的轉數網路設備。
+              p.gxc-more( href='#') 
+                | 進一步了解
+                img(alt='',src='../img/ic/common/arrow_right.svg')
+          div.card-bottom-l
+        div.col-12.col-md-4
+          div.card
+            a.img-card( href='../uc/index.html') 
+              div.card-bg
+                img(alt='',src='../img/card_e/cat_d/card_e_cat_d_uc.png')
+              div.card-text_a_e
+                h4.ellipsis
+                  img(alt='', src='../img/ic/cat_d/ic_cat_d_uc.svg') 
+                  | U 產品
+                p.ellipsis 可靠、高品質的轉數網路設備。
+              p.gxc-more( href='../uc/index.html') 
+                | 進一步了解
+                img(alt='',src='../img/ic/common/arrow_right.svg')
+          div.card-bottom-l
+        div.col-12.col-md-4
+          div.card
+            a.img-card(href="")
+              div.card-bg
+                img(alt='',src='../img/card_e/cat_d/card_e_cat_d_sslnpn.png')
+              div.card-text_a_e
+                h4.ellipsis
+                  img(alt='', src='../img/ic/cat_d/ic_cat_d_sslnpn.svg') 
+                  | SSL VPN
+                p.ellipsis 可靠、高品質的轉數網路設備。
+              p.gxc-more( href='#') 
+                | 進一步了解
+                img(alt='',src='../img/ic/common/arrow_right.svg')
+          div.card-bottom-l
+        div.col-12.col-md-4
+          div.card
+            a.img-card(href="")
+              div.card-bg
+                img(alt='',src='../img/card_e/cat_d/card_e_cat_d_equipment.png')
+              div.card-text_a_e
+                h4.ellipsis
+                  img(alt'', src='../img/ic/cat_d/ic_cat_d_equipment.svg') 
+                  | 網路資通設備
+                p.ellipsis 可靠、高品質的轉數網路設備。
+              p.gxc-more( href='#') 
+                | 進一步了解
+                img(alt='',src='../img/ic/common/arrow_right.svg')
+          div.card-bottom-l
+        div.col-12.col-md-4
+          div.card
+            a.img-card(href="")
+              div.card-bg
+                img(alt='',src='../img/card_e/cat_d/card_e_cat_d_iplc.png')
+              div.card-text_a_e
+                h4.ellipsis
+                  img(alt='', src='../img/ic/cat_d/ic_cat_d_iplc.svg') 
+                  | IPLC
+                p.ellipsis 可靠、高品質的轉數網路設備。
+              p.gxc-more( href='#') 
+                | 進一步了解
+                img(alt='',src='../img/ic/common/arrow_right.svg')
+          div.card-bottom-l
+        div.col-12.col-md-4
+          div.card
+            a.img-card(href="")
+              div.card-bg
+                img(alt='',src='../img/card_e/cat_d/card_e_cat_d_idc.png')
+              div.card-text_a_e
+                h4.ellipsis
+                  img(alt'', src='../img/ic/cat_d/ic_cat_d_idc.svg') 
+                  | MPLS VPN
+                p.ellipsis 可靠、高品質的轉數網路設備。
+              p.gxc-more( href='#') 
+                | 進一步了解
+                img(alt='',src='../img/ic/common/arrow_right.svg')
+          div.card-bottom-l
+        div.col-12.col-md-4
+          div.card
+            a.img-card(href="")
+              div.card-bg
+                img(alt='',src='../img/card_e/cat_d/card_e_cat_d_twgate.png')
+              div.card-text_a_e
+                h4.ellipsis
+                  img(alt='', src='../img/ic/cat_d/ic_cat_d_twgate.svg') 
+                  |  TWGate
+                p.ellipsis 可靠、高品質的轉數網路設備。
+              p.gxc-more( href='#') 
+                | 進一步了解
+                img(alt='',src='../img/ic/common/arrow_right.svg')
+          div.card-bottom-l
+        div.col-12.col-md-4
+          div.card
+            a.img-card(href="")
+              div.card-bg
+                img(alt='',src='../img/card_e/cat_d/card_e_cat_d_satellite.png')
+              div.card-text_a_e
+                h4.ellipsis
+                  img(alt='', src='../img/ic/cat_d/ic_cat_d_satellite.svg') 
+                  | 國際衛星
+                p.ellipsis 可靠、高品質的轉數網路設備。
+              p.gxc-more( href='#') 
+                | 進一步了解
+                img(alt='',src='../img/ic/common/arrow_right.svg')
+          div.card-bottom-l
+        div.col-12.col-md-4
+          div.card
+            a.img-card(href="")
+              div.card-bg
+                img(alt='',src='../img/card_e/cat_d/card_e_cat_d_mplsvpn.png')
+              div.card-text_a_e
+                h4.ellipsis
+                  img(alt='', src='../img/ic/cat_d/ic_cat_d_mplsvpn.svg') 
+                  | IDC
+                p.ellipsis 可靠、高品質的轉數網路設備。
+              p.gxc-more( href='#') 
+                | 進一步了解
+                img(alt='',src='../img/ic/common/arrow_right.svg')
+          div.card-bottom-l
+  //icon_c
+  section.icon_c.bg-gray.py-4
+    .container
+      div.title-area
+        h3 合作夥伴
+        p 服務全球超過 30 萬以上的企業，深受頂尖的企業信賴
+      .row.justify-content-center
+        .icon-area
+          img(src="../img/con-icon1.png", alt="")
+          img(src="../img/con-icon2.png", alt="")
+          img(src="../img/con-icon3.png", alt="")
+          img(src="../img/con-icon4.png", alt="")
+          img(src="../img/con-icon5.png", alt="")

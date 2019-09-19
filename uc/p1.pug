@@ -1,0 +1,247 @@
+extends ../layouts/layout_2.pug
+block page-title
+  title U 會議
+block content
+  // banner start
+  section.header
+    .container
+      nav.navbar.navbar-expand-md.navbar-light
+        a.navbar-brand.web(href='../index.html') 
+          img.change(src='../img/header/GXC_white.svg')
+        a.navbar-brand.web(href='index.html') 
+          img.svg(src='../img/header/uc_white.svg')
+        a.navbar-brand.mobile(href='../index.html') 
+          img(src='../img/header/GXC_colors.svg')
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#u-nav', aria-controls='u-nav', aria-expanded='true', )
+          span.navbar-toggler-icon
+        #u-nav.collapse.navbar-collapse
+          .nav-bg
+          ul.navbar-nav
+            div.nav-close.close.mobile(data-toggle='collapse', data-target='#u-nav', aria-controls='u-nav', aria-expanded='false', )
+              span &times;
+            a.mobile(href='../index.html') 
+              img(src='../img/header/GXC_colors.svg')
+            li.nav-item
+              a.mobile(href='index.html') U 產品
+            li.nav-item
+              a.active(href='p1.html') U 會議
+            li.nav-item
+              a(href='p2.html') U 簡報
+            li.nav-item
+              a(href='p3.html') U 通訊
+            li.nav-item
+              span.button#nav-login(onclick="location.href='https://u.cyberlink.com/user/signin'") 登入
+
+  section.banner
+    #sd-banner.carousel.slide(data-ride='carousel')
+      // Indicators
+      ol.carousel-indicators
+        li.active(data-target='#sd-banner', data-slide-to='0')
+        li(data-target='#sd-banner', data-slide-to='1')
+        li(data-target='#sd-banner', data-slide-to='2')
+      // Slides
+      .carousel-inner(role='listbox')
+        .carousel-item.w-100.active
+          .bg-mask
+          .bg(style='background:url(../img/banner/uc_p1/banner_uc_p1_01.png) no-repeat center; background-size: cover')
+          a.banner-container(href='')
+            .text
+              h2 U 會議
+              p 溝通新視界 輕鬆進行多人視訊會議
+              //- button(href='') 立即登入
+        .carousel-item.w-100
+          .bg-mask
+          .bg(style='background:url(../img/banner/uc_p1/banner_uc_p1_02.png) no-repeat center; background-size: cover')
+          a.banner-container(href='')
+            .text
+              h2 U 會議
+              p 溝通新視界 輕鬆進行多人視訊會議
+              //- button(href='') 立即登入
+        .carousel-item.w-100
+          .bg-mask
+          .bg(style='background:url(../img/banner/uc_p1/banner_uc_p1_03.png) no-repeat center; background-size: cover')
+          a.banner-container(href='')
+            .text
+              h2 U 會議
+              p 溝通新視界 輕鬆進行多人視訊會議
+
+  // article_b1
+  section.article_b1.bg-gray.py-6
+    .container
+      .row
+        .col-12.col-md-6
+          img(src='../img/article_b/uc/article_b_uc_p1_01.svg' alt='')
+        .col-12.col-md-6
+          div.text
+            h3.b-padding 高品質視訊會議
+            ul
+              li 使用 Chrome 瀏覽器即可輕鬆加入會議。
+              li 手機橫向預覽 4 個與會者視訊。
+              li 自動靜音，不用擔心回音干擾打斷會議。
+  // article_b2
+  section.article_b2.py-6
+    .container
+      .row
+        .col-12.col-md-6
+          img(src='../img/article_b/uc/article_b_uc_p1_02.svg' alt='')
+        .col-12.col-md-6
+          div.text
+            h3.b-padding  多元的溝通方式
+            ul
+              li 輕鬆管理視訊鏡頭和麥克風的使用狀況。
+              li 「並排」和「發言者」兩種顯示模式讓你自由切換。
+              li 可依需求選擇特定應用程式進行桌面分享。
+              li 「虛擬雷射筆」功能，快速標記畫面上的任一區塊。
+  // article_b1
+  section.article_b1.bg-gray.py-6
+    .container
+      .row
+        .col-12.col-md-6
+          img(src='../img/article_b/uc/article_b_uc_p1_03.svg' alt='')
+        .col-12.col-md-6
+          div.text
+            h3.b-padding  寄送邀請＆排程超簡單
+            ul
+              li 免安裝下載，只要打開網頁，就能加入。
+              li 只需一鍵點擊，即可邀請工作夥伴加入會議。
+              li 整合 Outlook 和 Google 行事曆等常用排程系統，輕鬆設定通知。
+  // article_b2
+  section.article_b2.py-6
+    .container
+      .row
+        .col-12.col-md-6
+          img(src='../img/article_b/uc/article_b_uc_p1_04.svg' alt='')
+        .col-12.col-md-6
+          div.text
+            h3.b-padding 管理團體帳戶＆線上會議
+            ul
+              li 管理員可檢視詳細資料，方便進行組織授權合約管理。
+              li 管理員可隨時新增或刪除組織成員。
+              li 管理員可輕鬆總覽會議使用情形，主持人人數、與會者總數量等其他數據分析。
+  // price
+  section.price.bg-gray.py-5
+    .container-fluid
+      .row.justify-content-center
+        .title-area.big-title
+          h3 解決方案＆價格
+          p 無論是線上直播或視訊會議Ｕ都是您的最佳選擇
+      .row.justify-content-center
+        .col-12
+          div.owl-carousel.owl-theme.owl-loaded
+            .owl-stage-outer
+              .owl-stage
+                div.owl-item
+                  .card
+                    .img-card
+                      div.card-bg
+                        img(alt='' src='../img/pricing/uc_p1/pricing_uc_01.png')
+                      div.card-text
+                        h2 Basic
+                        p 免費
+                      ul
+                        li 
+                          img(src='../img/ic/common/check.svg')
+                          p 單場會議 25 人以內
+                        li 
+                          img(src='../img/ic/common/check.svg')
+                          p 單場會議 30 分鐘
+                        span.button(onclick="location.href='https://u.cyberlink.com/download'")
+                          | 下載
+                div.owl-item
+                  .card
+                    .img-card
+                      div.card-bg
+                        img(alt='' src='../img/pricing/uc_p1/pricing_uc_02.png')
+                      div.card-text
+                        h2 Pro 100
+                        p 專人洽詢
+                      ul
+                        li 
+                          img(src='../img/ic/common/check.svg')
+                          p 單場會議 100 人以內
+                        li 
+                          img(src='../img/ic/common/check.svg')
+                          p 單場會議 24 小時
+                        li 
+                          img(src='../img/ic/common/check.svg')
+                          p 組織管理工具
+                        span.button(href='' data-toggle='modal' data-target='#uc_p1_popup')
+                          | 立即購買
+                div.owl-item
+                  .card
+                    .img-card
+                      div.card-bg
+                        img(alt='' src='../img/pricing/uc_p1/pricing_uc_03.png')
+                      div.card-text
+                        h2 商務
+                        p 專人洽詢
+                      ul
+                        li 
+                          img(src='../img/ic/common/check.svg')
+                          p 單場會議 100 人以內
+                        li 
+                          img(src='../img/ic/common/check.svg')
+                          p 單場會議 24 小時
+                        li 
+                          img(src='../img/ic/common/check.svg')
+                          p 組織管理工具
+                        li 
+                          img(src='../img/ic/common/check.svg')
+                          p 專屬客戶支援服務
+                        li 
+                          img(src='../img/ic/common/check.svg')
+                          p 端對端加密
+                        li 
+                          img(src='../img/ic/common/check.svg')
+                          p 依您的組織/公司/學校需求提供客製化功能
+                        span.button(href='' data-toggle='modal' data-target='#uc_p1_popup')
+                          | 聯絡我們
+        
+    #uc_p1_popup.modal.fade.bd-example-modal-lg(tabindex='-1' role='dialog' aria-hidden='true')
+      .modal-dialog.modal-lg.modal-dialog-centered(role='document')
+        .modal-content
+          .modal-body
+            button.close(type='button' data-dismiss='modal' aria-label='Close')
+              span(aria-hidden='true') &times;
+            .content
+              img(src='../img/popup.png')
+            .text-area
+              h2 請與我們的專員聯繫
+              h3 Tel: 0800-080-201
+              p Taiwan-Toll Free 台灣地區免費服務電話
+              h3 Tel: +886-2-3396-1300
+              h3 Fax: +886-2-2394-4041
+              h3 E-mail: chit-sc@cht.com.tw
+  //article_c
+  section.article_c.py-5
+    .container
+      .row
+        .col-12.col-md-6
+          .img
+            img(src='../img/article_c/article_c_uc_02.svg') 
+        .col-12.col-md-6
+          div.text
+            h2 U 會議各方案比較表
+            p 訊連科技保留隨時修改方案條款之權利，不另行通知。
+            a.gxc-more(href='https://u.cyberlink.com/download')
+              | 進一步了解
+              img.icon(src='../img/ic/common/arrow_right.svg')
+
+  //contact
+  section.contact.bg-gray.py-5
+    .row.justify-content-center
+      .col-12.col-md-5.text-center
+        .title-area.text-center
+          h3 專人聯絡我
+          p 留下您的資料，我們將立刻提供專人諮詢服務
+        form(method="post" action="mailto:wishsky13@gmail.com" enctype="Text/Plain")
+          .row.justify-content-center
+            .col-12.col-md-6
+              input#username(type='text' name='username' placeholder='請輸入您的姓名')
+            .col-12.col-md-6
+              input#userphone(type='text' name='userphone' placeholder='請輸入手機號碼')
+            .col-12
+              input#companyname(type='text' name='username' placeholder='請輸入公司名稱')
+          .row.justify-content-center
+            .col-12
+              button.button(type='submit') 送出

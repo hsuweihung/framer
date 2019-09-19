@@ -1,0 +1,129 @@
+extends ../layouts/layout_2.pug
+block page-title
+  title  成功案例
+block content
+  // banner start
+  section.header
+    .container
+      nav.navbar.navbar-expand-md.navbar-light
+        a.navbar-brand.web(href='../index.html') 
+          img.change(src='../img/header/GXC_white.svg')
+        a.navbar-brand.web(href='index.html') 
+          img.svg(src='../img/header/sdwan_white.svg')
+        a.navbar-brand.mobile(href='../index.html') 
+          img(src='../img/header/GXC_colors.svg')
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#sd-nav', aria-controls='sd-nav', aria-expanded='false', )
+          span.navbar-toggler-icon
+        #sd-nav.collapse.navbar-collapse
+          .nav-bg
+          ul.navbar-nav
+            div.nav-close.close.mobile(data-toggle='collapse', data-target='#sd-nav', aria-controls='sd-nav', aria-expanded='false', )
+              span &times;
+            a.mobile(href='../index.html') 
+              img(src='../img/header/GXC_colors.svg')
+            li.nav-item.mobile
+              a(href='index.html') SD-WAN
+            li.nav-item
+              a(href='page_1.html') 服務介紹 
+            li.nav-item
+              a(href='page_2.html') 特色
+            li.nav-item
+              a(href='page_3.html') 解決方案
+            li.nav-item.navbardrop
+              a.active(href='page_4.html') 成功案例
+              a#sd-navbardrop.mobile.dropdown-toggle(href='page_4.html'  data-toggle="dropdown" aria-haspopup="true" aria-expanded="true") 
+              .dropdown-menu(aria-labelledby="sd-navbardrop")
+                a.dropdown-item(href='page_4_1.html') 運輸業
+                a.dropdown-item(href='') 保銳藥業
+                a.dropdown-item(href='') 玉山銀行
+  section.banner
+    #sd-bannar.carousel.slide(data-ride='carousel')
+      // Indicators
+      ol.carousel-indicators
+        li.active(data-target='#sd-bannarr', data-slide-to='0')
+        li(data-target='#sd-bannar', data-slide-to='1')
+        li(data-target='#sd-bannar', data-slide-to='2')
+      // Slides
+      .carousel-inner(role='listbox')
+        .carousel-item.w-100.active
+          .bg-mask
+          .bg(style='background:url(../img/banner/sdwan_p4/banner_sdwan_p4_01.png) no-repeat center; background-size: cover')
+          a.banner-container(href="")
+            .text
+              h2 成功案例
+              p 超過 190 個 國家/地區中的 LTE / 4G，提供客戶即時、安全的網路效能
+        .carousel-item.w-100
+          .bg-mask
+          .bg(style='background:url(../img/banner/sdwan_p4/banner_sdwan_p4_02.png) no-repeat center; background-size: cover')
+          a.banner-container(href="")
+            .text
+              h2 成功案例
+              p 超過 190 個 國家/地區中的 LTE / 4G，提供客戶即時、安全的網路效能
+        .carousel-item.w-100
+          .bg-mask
+          .bg(style='background:url(../img/banner/sdwan_p4/banner_sdwan_p4_03.png) no-repeat center; background-size: cover')
+          a.banner-container(href="")
+            .text
+              h2 成功案例
+              p 超過 190 個 國家/地區中的 LTE / 4G，提供客戶即時、安全的網路效能
+  section.card_e.py-5
+    .container
+      div.title-area
+        h3 精選案例
+        p 中華電信 SD-WAN 服務範圍涵蓋全球，建構企業強健且彈性的全球網路
+      div.row
+        div.col-12.col-md-4
+          div.card
+            a.img-card(href='page_4_1.html')
+              div.card-bg
+                img(alt='',src='../img/card_e/cat_a/card_e_cat_a_iot.png')
+              div.card-text_a_e
+                h4 運輸業
+                p 提供骨幹技術，具有數據中心服務
+              p.gxc-more( href='page_4_1.html') 
+                | 查看此案例
+                img(alt='',src='../img/ic/common/arrow_right.svg')
+          div.card-bottom-l
+        div.col-12.col-md-4
+          div.card
+            a.img-card(href='')
+              div.card-bg
+                img(alt='',src='../img/card_e/cat_a/card_e_cat_a_bigdata.png')
+              div.card-text_a_e
+                h4 保銳藥業
+                p 提供骨幹技術，具有數據中心服務
+              p.gxc-more( href='#') 
+                | 查看此案例
+                img(alt='',src='../img/ic/common/arrow_right.svg')
+          div.card-bottom-l
+        div.col-12.col-md-4
+          div.card
+            a.img-card( href='') 
+              div.card-bg
+                img(alt='',src='../img/card_e/cat_a/card_e_cat_a_ai.png')
+              div.card-text_a_e
+                h4 玉山銀行
+                p 提供骨幹技術，具有數據中心服務
+              p.gxc-more( href='#') 
+                | 查看此案例
+                img(alt='',src='../img/ic/common/arrow_right.svg')
+          div.card-bottom-l
+  //contact
+  section.contact.bg-gray.py-5
+    .row.justify-content-center
+      .col-12.col-md-5.text-center
+        .title-area.text-center
+          h3 專人聯絡我
+          p 留下您的資料，我們將立刻提供專人諮詢服務
+        form(method="post" action="mailto:wishsky13@gmail.com" enctype="Text/Plain")
+          .row.justify-content-center
+            .col-12.col-md-6
+              input#username(type='text' name='username' placeholder='請輸入您的姓名')
+            .col-12.col-md-6
+              input#userphone(type='text' name='userphone' placeholder='請輸入手機號碼')
+            .col-12
+              input#companyname(type='text' name='username' placeholder='請輸入公司名稱')
+          .row.justify-content-center
+            .col-12
+              button.button(type='submit') 送出
+

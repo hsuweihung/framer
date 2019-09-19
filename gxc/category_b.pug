@@ -1,0 +1,165 @@
+extends ../layouts/layout_2.pug
+block page-title
+  title  資訊安全服務
+block content
+  section.banner
+    #b-bannar.carousel.slide(data-ride='carousel')
+      // Indicators
+      ol.carousel-indicators
+        li.active(data-target='#b-bannarr', data-slide-to='0')
+        li(data-target='#b-bannar', data-slide-to='1')
+        li(data-target='#b-bannar', data-slide-to='2')
+      // Slides
+      .carousel-inner(role='listbox')
+        .carousel-item.w-100.active
+          .bg-mask
+          .bg(style='background:url(../img/banner/cat_b/banner_cat_b_01.png) no-repeat center; background-size: cover')
+          a.banner-container(href="")
+            .text
+              h2 資訊安全服務
+              p 超過 190 個 國家/地區中的 LTE / 4G，提供客戶即時、安全的網路效能
+
+        .carousel-item.w-100
+          .bg-mask
+          .bg(style='background:url(../img/banner/cat_b/banner_cat_b_02.png) no-repeat center; background-size: cover')
+          a.banner-container(href="")
+            .text
+              h2 資訊安全服務
+              p 超過 190 個 國家/地區中的 LTE / 4G，提供客戶即時、安全的網路效能
+
+        .carousel-item.w-100
+          .bg-mask
+          .bg(style='background:url(../img/banner/cat_b/banner_cat_b_03.png) no-repeat center; background-size: cover')
+          a.banner-container(href="")
+            .text
+              h2 資訊安全服務
+              p 超過 190 個 國家/地區中的 LTE / 4G，提供客戶即時、安全的網路效能
+  section.card_e.py-5
+    .container
+      div.title-area
+      div.row
+        div.col-12.col-md-4
+          div.card
+            a.img-card(href="")
+              div.card-bg
+                img(alt='',src='../img/card_e/cat_b/card_e_cat_b_defense.png')
+              div.card-text_a_e
+                h4
+                  img(alt='', src='../img/ic/cat_b/ic_cat_b_defense.svg') 
+                  | 源碼檢查
+                p.ellipsis 可靠、高品質的轉數網路設備。
+              p.gxc-more( href='#') 
+                | 進一步了解
+                img(alt='',src='../img/ic/common/arrow_right.svg')
+          div.card-bottom-l
+        div.col-12.col-md-4
+          div.card
+            a.img-card(href="")
+              div.card-bg
+                img(alt='',src='../img/card_e/cat_b/card_e_cat_b_warning.png')
+              div.card-text_a_e
+                h4
+                  img(alt='', src='../img/ic/cat_b/ic_cat_b_warning.svg') 
+                  | 滲透測試
+                p.ellipsis 可靠、高品質的轉數網路設備。
+              p.gxc-more( href='#') 
+                | 進一步了解
+                img(alt='',src='../img/ic/common/arrow_right.svg')
+          div.card-bottom-l
+        div.col-12.col-md-4
+          div.card
+            a.img-card(href="")
+              div.card-bg
+                img(alt='',src='../img/card_e/cat_b/card_e_cat_b_safe.png')
+              div.card-text_a_e
+                h4.ellipsis
+                  img(alt='', src='../img/ic/cat_b/ic_cat_b_safe.svg') 
+                  | 電子郵件警覺測試
+                p.ellipsis 可靠、高品質的轉數網路設備。
+              p.gxc-more( href='#') 
+                | 進一步了解
+                img(alt='',src='../img/ic/common/arrow_right.svg')
+          div.card-bottom-l
+        div.col-12.col-md-4
+          div.card
+            a.img-card(href="")
+              div.card-bg
+                img(alt='',src='../img/card_e/cat_b/card_e_cat_b_soc.png')
+              div.card-text_a_e
+                h4
+                  img(alt='', src='../img/ic/cat_b/ic_cat_b_soc.svg') 
+                  | 委外SOC
+                p.ellipsis 全球覆蓋最廣，超過19個國家
+              p.gxc-more( href='#') 
+                | 進一步了解
+                img(alt='',src='../img/ic/common/arrow_right.svg')
+          div.card-bottom-l
+        div.col-12.col-md-4
+          div.card
+            a.img-card(href="")
+              div.card-bg
+                img(alt='',src='../img/card_e/cat_b/card_e_cat_b_noc.png')
+              div.card-text_a_e
+                h4
+                  img(alt='', src='../img/ic/cat_b/ic_cat_b_noc.svg') 
+                  | 弱點掃描
+                p.ellipsis 可靠、高品質的轉數網路設備。
+              p.gxc-more( href='#') 
+                | 進一步了解
+                img(alt='',src='../img/ic/common/arrow_right.svg')
+          div.card-bottom-l
+        div.col-12.col-md-4
+          div.card
+            a.img-card(href="")
+              div.card-bg
+                img(alt='',src='../img/card_e/cat_b/card_e_cat_b_rescue.png')
+              div.card-text_a_e
+                h4
+                  img(alt='', src='../img/ic/cat_b/ic_cat_b_rescue.svg') 
+                  | 資安健診
+                p.ellipsis 可靠、高品質的轉數網路設備。
+              a.gxc-more( href='#') 
+                | 進一步了解
+                img(alt='',src='../img/ic/common/arrow_right.svg')
+          div.card-bottom-l
+        div.col-12.col-md-4
+          div.card
+            .img-card
+              div.card-bg
+                img(alt='',src='../img/card_e/cat_b/card_e_cat_b_rescue.png')
+              div.card-text_a_e
+                h4
+                  img(alt='', src='../img/ic/cat_b/ic_cat_b_rescue.svg') 
+                  | APP 檢測服務
+                p.ellipsis 可靠、高品質的轉數網路設備。
+              a.gxc-more( href='#') 
+                | 進一步了解
+                img(alt='',src='../img/ic/common/arrow_right.svg')
+          div.card-bottom-l
+        div.col-12.col-md-4
+          div.card
+            .img-card
+              div.card-bg
+                img(alt='',src='../img/card_e/cat_b/card_e_cat_b_rescue.png')
+              div.card-text_a_e
+                h4
+                  img(alt='', src='../img/ic/cat_b/ic_cat_b_rescue.svg') 
+                  | 鑑識服務
+                p.ellipsis 可靠、高品質的轉數網路設備。
+              p.gxc-more( href='#') 
+                | 進一步了解
+                img(alt='',src='../img/ic/common/arrow_right.svg')
+          div.card-bottom-l
+  //icon_c
+  section.icon_c.bg-gray.py-4
+    .container
+      div.title-area
+        h3 合作夥伴
+        p 服務全球超過 30 萬以上的企業，深受頂尖的企業信賴
+      .row.justify-content-center
+        .icon-area
+          img(src="../img/con-icon1.png", alt="")
+          img(src="../img/con-icon2.png", alt="")
+          img(src="../img/con-icon3.png", alt="")
+          img(src="../img/con-icon4.png", alt="")
+          img(src="../img/con-icon5.png", alt="")

@@ -1,0 +1,82 @@
+extends ../layouts/layout_2.pug
+block page-title
+  title 成功案例
+block content
+  // banner start
+  section.header
+    .container
+      nav.navbar.navbar-expand-md.navbar-light
+        a.navbar-brand.web(href='../index.html') 
+          img.change(src='../img/header/GXC_white.svg')
+        a.navbar-brand.web(href='index.html') 
+          img.svg(src='../img/header/sdwan_white.svg')
+        a.navbar-brand.mobile(href='../index.html') 
+          img(src='../img/header/GXC_colors.svg')
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#sd-nav', aria-controls='sd-nav', aria-expanded='false', )
+          span.navbar-toggler-icon
+        #sd-nav.collapse.navbar-collapse
+          .nav-bg
+          ul.navbar-nav
+            div.nav-close.close.mobile(data-toggle='collapse', data-target='#sd-nav', aria-controls='sd-nav', aria-expanded='false', )
+              span &times;
+            a.mobile(href='../index.html') 
+              img(src='../img/header/GXC_colors.svg')
+            li.nav-item.mobile
+              a(href='index.html') SD-WAN
+            li.nav-item
+              a(href='page_1.html') 服務介紹 
+            li.nav-item
+              a(href='page_2.html') 特色
+            li.nav-item
+              a(href='page_3.html') 解決方案
+            li.nav-item.navbardrop
+              a.active(href='page_4.html') 成功案例
+              a#sd-navbardrop.mobile.dropdown-toggle(href='page_4.html'  data-toggle="dropdown" aria-haspopup="true" aria-expanded="true") 
+              .dropdown-menu(aria-labelledby="sd-navbardrop")
+                a.dropdown-item(href='page_4_1.html') 運輸業
+                a.dropdown-item(href='') 保銳藥業
+                a.dropdown-item(href='') 玉山銀行
+  section.banner
+    #sd-bannar.carousel.slide(data-ride='carousel')
+      // Indicators
+      ol.carousel-indicators
+        li.active(data-target='#sd-bannarr', data-slide-to='0')
+        li(data-target='#sd-bannar', data-slide-to='1')
+        li(data-target='#sd-bannar', data-slide-to='2')
+      // Slides
+      .carousel-inner(role='listbox')
+        .carousel-item.w-100.active
+          .bg-mask
+          .bg(style='background:url(../img/banner/sdwan_p5/banner_sdwan_p5_01.png) no-repeat center; background-size: cover')
+          a.banner-container(href="")
+            .text
+              h2 成功案例
+              p 超過 190 個 國家/地區中的 LTE / 4G，提供客戶即時、安全的網路效能
+        .carousel-item.w-100
+          .bg-mask
+          .bg(style='background:url(../img/banner/sdwan_p5/banner_sdwan_p5_02.png) no-repeat center; background-size: cover')
+          a.banner-container(href="")
+            .text
+              h2 成功案例
+              p 超過 190 個 國家/地區中的 LTE / 4G，提供客戶即時、安全的網路效能
+        .carousel-item.w-100
+          .bg-mask
+          .bg(style='background:url(../img/banner/sdwan_p5/banner_sdwan_p5_01.png) no-repeat center; background-size: cover')
+          a.banner-container(href="")
+            .text
+              h2 成功案例
+              p 超過 190 個 國家/地區中的 LTE / 4G，提供客戶即時、安全的網路效能
+  section.sd_article
+    .container
+      .row.justify-content-start.justify-content-md-center
+        .col-12.col-lg-10
+          .title-area
+            h3 運輸業
+            p 國內全球有近200據點的運輸業，原以MPLS為主電路並以Internet作為備援，導入中華電信SD-WAN解決方案後，獲得良好效益。
+          .text
+            img(src='../img/sd_wan_p4.png')
+          .title-area
+            h4 網路可用率提升，降低維運成本
+          .text
+            p 以SD-WAN結合MPLS及Internet以Active-Active的模式運作，可用頻寬擴增10倍。智慧化無縫切換，各系統網路傳輸的 Availability由 95%可提升至100%。SD-WAN取代路由器、頻寬管理器、加密器、Qos等設備，大幅減少設備建置成本50%，管理設備數減少，設定及管理可視化及簡易化大幅減少管理人力，維運人力可由4人減少為2人。
+            

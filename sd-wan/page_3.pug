@@ -1,0 +1,267 @@
+extends ../layouts/layout_2.pug
+block page-title
+  title  解決方案
+block content
+  // banner start
+  section.header
+    .container
+      nav.navbar.navbar-expand-md.navbar-light
+        a.navbar-brand.web(href='../index.html') 
+          img.change(src='../img/header/GXC_white.svg')
+        a.navbar-brand.web(href='index.html') 
+          img.svg(src='../img/header/sdwan_white.svg')
+        a.navbar-brand.mobile(href='../index.html') 
+          img(src='../img/header/GXC_colors.svg')
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#sd-nav', aria-controls='sd-nav', aria-expanded='false', )
+          span.navbar-toggler-icon
+        #sd-nav.collapse.navbar-collapse
+          .nav-bg
+          ul.navbar-nav
+            div.nav-close.close.mobile(data-toggle='collapse', data-target='#sd-nav', aria-controls='sd-nav', aria-expanded='false', )
+              span &times;
+            a.mobile(href='../index.html') 
+              img(src='../img/header/GXC_colors.svg')
+            li.nav-item.mobile
+              a(href='index.html') SD-WAN
+            li.nav-item
+              a(href='page_1.html') 服務介紹 
+            li.nav-item
+              a(href='page_2.html') 特色
+            li.nav-item
+              a.active(href='page_3.html') 解決方案
+            li.nav-item.navbardrop
+              a(href='page_4.html') 成功案例
+              a#sd-navbardrop.mobile.dropdown-toggle(href='page_4.html'  data-toggle="dropdown" aria-haspopup="true" aria-expanded="true") 
+              .dropdown-menu(aria-labelledby="sd-navbardrop")
+                a.dropdown-item(href='page_4_1.html') 運輸業
+                a.dropdown-item(href='') 保銳藥業
+                a.dropdown-item(href='') 玉山銀行
+
+  section.banner
+    #sd-banner.carousel.slide(data-ride='carousel')
+      // Indicators
+      ol.carousel-indicators
+        li.active(data-target='#sd-banner', data-slide-to='0')
+        li(data-target='#sd-banner', data-slide-to='1')
+        li(data-target='#sd-banner', data-slide-to='2')
+      // Slides
+      .carousel-inner(role='listbox')
+        .carousel-item.w-100.active
+          .bg-mask
+          .bg(style='background:url(../img/banner/sdwan_p3/banner_sdwan_p3_01.png) no-repeat center; background-size: cover')
+          a.banner-container(href="")
+            .text
+              h2 客戶需求及解決方案
+              p 無論您是一家高速成長的創新企業，還是一家轉型中的知名公司，我們都能提供幫助
+
+        .carousel-item.w-100
+          .bg-mask
+          .bg(style='background:url(../img/banner/sdwan_p3/banner_sdwan_p3_02.png) no-repeat center; background-size: cover')
+          a.banner-container(href="")
+            .text
+              h2 客戶需求及解決方案
+              p 無論您是一家高速成長的創新企業，還是一家轉型中的知名公司，我們都能提供幫助
+
+        .carousel-item.w-100
+          .bg-mask
+          .bg(style='background:url(../img/banner/sdwan_p3/banner_sdwan_p3_03.png) no-repeat center; background-size: cover')
+          a.banner-container(href="")
+            .text
+              h2 客戶需求及解決方案
+              p 無論您是一家高速成長的創新企業，還是一家轉型中的知名公司，我們都能提供幫助
+
+  // solution
+  section.solution
+    .container-fluid
+      .section-tab
+        .tab
+          .row.text-center.justify-content-center.bg-gray
+            .tab-wrap
+              ul.nav.nav-tabs#sd-tab.d-flex(role='tablist')
+                li.nav-item
+                  a#M1.active(data-toggle='tab' href='#M1-content' )
+                    div.button
+                      p 情境一
+                      h2 簡化管理與設定
+                li.nav-item
+                  a#M2(data-toggle='tab' href='#M2-content' )
+                    div.button
+                      p 情境二
+                      h2 應用分流及提升服務品質
+                li.nav-item
+                  a#M3(data-toggle='tab' href='#M3-content' )
+                    div.button
+                      p 情境三
+                      h2 提升使用公有雲的傳輸品質
+      .tab-content.py-5
+        div#M1-content.tab-pane.active
+          .container
+            .row.justify-content-center
+              .col-lg-6
+                div.text-area
+                    div.content-list
+                      h3 網路環境
+                      ul
+                        li 客戶總部在台灣
+                        li 海外有五個據點，三個據點分布於亞太，美國及歐洲各一據點
+                        li 總部及海外據點皆具有 MPLS 及 Internet
+                        li 總部 MPLS 頻寬 30Mbps，Internet 100Mbps
+                        li 三個亞太據點 MPLS 頻寬 10M，Internet 50Mbps
+                        li 美國及歐洲據點 MPLS 頻寬 5M，Internet 20Mbps
+                    div.content-collapse
+                      h3 問題與解決方案
+                      #M1C.accordion
+                        .card
+                          #M1S1.card-header
+                              h4 客戶以 MPLS 及 Internet 作分流，設定複雜
+                              button.btn.btn-link(type='button' data-toggle='collapse' data-target='#M1S1-content' aria-expanded='true' aria-controls='M1S1-content') 
+                                div.collapse-icon
+                          .card-border
+                          #M1S1-content.collapse.show(aria-labelledby='M1S1' data-parent='#M1C')
+                            .card-body
+                              ul
+                                li SD-WAN 提供 Web 圖形化設定模式，方便於集中介面進行全網的視覺化管理及設定。
+                        .card-bottom-m
+                        .card
+                          
+                          #M1S2.card-header
+                              h4 當網段異動或新增服務據點時，須分別連入各據點做相對應的調整，造成管理人員很大的負擔
+                              button.btn.btn-link.collapsed(type='button' data-toggle='collapse' data-target='#M1S2-content' aria-expanded='false' aria-controls='M1S2-content')
+                                div.collapse-icon
+                          .card-border
+                          #M1S2-content.collapse(aria-labelledby='M1S2' data-parent='#M1C')
+                            .card-body
+                              ul
+                                li SD-WAN集中控管元件為 SD-WAN 最重要指揮中心，必須確保其網路及設備的可用性，中華電信於骨幹建置 SD-WAN 集中控管元件，免去客戶自建自維的負擔。
+                        .card-bottom-m
+                        .card
+                          #M1S3.card-header
+                              h4 當網管人員異動時，新接手之網管人員難以承接
+                              button.btn.btn-link.collapsed(type='button' data-toggle='collapse' data-target='#M1S3-content' aria-expanded='false' aria-controls='M1S3-content')
+                                div.collapse-icon
+                          .card-border
+                          #M1S3-content.collapse(aria-labelledby='M1S3' data-parent='#M1C')
+                            .card-body
+                              ul
+                                li 中華電信提供 SD-WAN 的託管服務，深入了解客戶網路環境及使用需求，協助客戶進行網路規劃、設定、管理。
+                                li 中華電信提供完善的網管系統。
+                                li 7 x 24 Managed Service Center 專業維護人員，提供中英文服務。
+                        .card-bottom-m
+              .col-lg-6
+                div.img-area
+                  div.content-img
+                    img(src='../img/page_a/sdwan/page_a_sdwan_p3_01.svg' alt='')
+                  div.content
+                    ul
+                      li
+                        img(src='../img/ic/sdwan/ic_sdwan_p3_path_01.svg' alt='')
+                        .content-small.up
+                          h5 MPLS 專線路徑 <br> &ensp;
+                      li
+                        img(src='../img/ic/sdwan/ic_sdwan_p3_path_02.svg' alt='')
+                        .content-small.up
+                          h5 全段 Internet 路徑 <br> &ensp;
+        div#M2-content.tab-pane
+          .container
+            .row
+              .col-lg-6
+                div.text-area
+                    div.content-list
+                      h3 網路環境
+                      ul
+                        li 客戶總部在台灣，海外有兩據點，每一據點都有Internet及MPLS服務，MPLS頻寬比Internet頻寬相距很大
+                        li 將使用頻寬較小且重用的應用以MPLS為主電路：ERP、語
+                        li 將使用頻寬較大之應用 ( 如視訊、檔案傳輸等 ) 以Internet IPSec為主電路
+                    div.content-collapse
+                      h3 問題與解決方案
+                      #M2C.accordion
+                        .card
+                          #M2S1.card-header
+                              h4 傳統路由器須當線路完全中斷才進行切換，造成應用的傳輸品質不良及重要服務downtime時間過久
+                              button.btn.btn-link(type='button' data-toggle='collapse' data-target='#M2S1-content' aria-expanded='true' aria-controls='M2S1-content')
+                                div.collapse-icon
+                          .card-border
+                          #M2S1-content.collapse.show(aria-labelledby='M2S1' data-parent='#M2C')
+                            .card-body
+                              ul
+                                li SD-WAN可依據SLA (Packet loss、Jitter、Latency) 設定網路切換的條件，提升應用之傳輸品質及降低downtime。
+                        .card-bottom-m
+                        .card
+                          #M2S2.card-header
+                              h4 訊視IP經常異動，分流設定亦須做相對應的調整，管理不易
+                              button.btn.btn-link.collapsed(type='button' data-toggle='collapse' data-target='#M2S2-content' aria-expanded='false' aria-controls='M2S2-content')
+                                div.collapse-icon
+                          .card-border
+                          #M2S2-content.collapse(aria-labelledby='M2S2' data-parent='#M2C')
+                            .card-body
+                              ul
+                                li SD-WAN可依據應用層分流，故可設定當 Traffic 的 pattern 為視訊時透過 Internet IPSec 或 MPLS 傳輸，而不需要以 IP 決定分流路徑。
+                        .card-bottom-m
+                        .card
+                          #M2S3.card-header
+                              h4 當Internet切換至MPLS時，因為可用頻寬縮小造成重要應用通訊品質不良
+                              button.btn.btn-link.collapsed(type='button' data-toggle='collapse' data-target='#M2S3-content' aria-expanded='false' aria-controls='M2S3-content')
+                                div.collapse-icon
+                          .card-border
+                          #M2S3-content.collapse(aria-labelledby='M2S3' data-parent='#M2C')
+                            .card-body
+                              ul
+                                li 中華電信設計完善的 SD-WAN end-to-end Qos 機制，並具備豐富的 Qos 規劃經驗，於頻寬壅塞時保障重要應用傳輸品質。
+                        .card-bottom-m
+              .col-lg-6
+                div.img-area
+                  div.content-img
+                    img(src='../img/page_a/sdwan/page_a_sdwan_p3_02.svg' alt='')
+                  div.content
+                    ul
+                      li
+                        img(src='../img/ic/sdwan/ic_sdwan_p3_path_01.svg' alt='')
+                        .content-small
+                          h5 MPLS 專線路徑
+                          p ERP、Voice主線路 <br> Video 備援電路
+                      li
+                        img(src='../img/ic/sdwan/ic_sdwan_p3_path_02.svg' alt='')
+                        .content-small
+                          h5 全段 Internet 路徑
+                          p Video 備援電路 <br> ERP、Voice主線路
+        div#M3-content.tab-pane
+          .container
+            .row
+              .col-lg-6
+                div.text-area
+                    div.content-list
+                      h3 網路環境
+                      ul
+                        li 客戶總部在台灣
+                        li 三個Branch分別位於台灣、越南、大陸
+                        li 客戶使用AWS服務，AWS的VPC (Virtual Private Cloud)建置於日本，各據點皆有存取日本VPC的需求
+                    div.content-collapse
+                      h3 問題與解決方案
+                      #M3C.accordion
+                        .card
+                          #M3S1.card-header
+                              h4 透過網際網路品質存取AWS的品質不易掌控，且可能遇到封網問題
+                              button.btn.btn-link(type='button' data-toggle='collapse' data-target='#M3S1-content' aria-expanded='true' aria-controls='M3S1-content')
+                                div.collapse-icon
+                          .card-border
+                          #M3S1-content.collapse.show(aria-labelledby='M3S1' data-parent='#M3C')
+                            .card-body
+                              ul
+                                li 中華電信骨幹連結各主要公有雲服務。
+                                li 客戶利用多種網路就近連結中華電信 SD-WAN 骨幹節點，透過中華電信骨幹連結各公有雲服務。
+                        .card-bottom-m
+              .col-lg-6
+                div.img-area
+                  div.content-img
+                    img(src='../img/page_a/sdwan/page_a_sdwan_p3_03.svg' alt='')
+                  div.content
+                    ul
+                      li
+                        img(src='../img/ic/sdwan/ic_sdwan_p3_path_01.svg' alt='')
+                        .content-small
+                          h5 MPL 透過 MPLS
+                            | 專線存取 AWS
+                      li
+                        img(src='../img/ic/sdwan/ic_sdwan_p3_path_02.svg' alt='')
+                        .content-small
+                          h5 經 Region Internet 進入中華 SD-WAN 局端設備存取 AWS

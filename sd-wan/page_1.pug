@@ -1,0 +1,166 @@
+extends ../layouts/layout_2.pug
+block page-title
+  title  服務介紹
+block content
+  // banner start
+  section.header
+    .container
+      nav.navbar.navbar-expand-md.navbar-light
+        a.navbar-brand.web(href='../index.html') 
+          img.change(src='../img/header/GXC_white.svg')
+        a.navbar-brand.web(href='index.html') 
+          img.svg(src='../img/header/sdwan_white.svg')
+        a.navbar-brand.mobile(href='../index.html') 
+          img(src='../img/header/GXC_colors.svg')
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#sd-nav', aria-controls='sd-nav', aria-expanded='false', )
+          span.navbar-toggler-icon
+        #sd-nav.collapse.navbar-collapse
+          .nav-bg
+          ul.navbar-nav
+            div.nav-close.close.mobile(data-toggle='collapse', data-target='#sd-nav', aria-controls='sd-nav', aria-expanded='false', )
+              span &times;
+            a.mobile(href='../index.html') 
+              img(src='../img/header/GXC_colors.svg')
+            li.nav-item.mobile
+              a(href='index.html') SD-WAN
+            li.nav-item
+              a.active(href='page_1.html') 服務介紹 
+            li.nav-item
+              a(href='page_2.html') 特色
+            li.nav-item
+              a(href='page_3.html') 解決方案
+            li.nav-item.navbardrop
+              a(href='page_4.html') 成功案例
+              a#sd-navbardrop.mobile.dropdown-toggle(href='page_4.html'  data-toggle="dropdown" aria-haspopup="true" aria-expanded="true") 
+              .dropdown-menu(aria-labelledby="sd-navbardrop")
+                a.dropdown-item(href='page_4_1.html') 運輸業
+                a.dropdown-item(href='') 保銳藥業
+                a.dropdown-item(href='') 玉山銀行
+
+  section.banner
+    #sd-banner.carousel.slide(data-ride='carousel')
+      // Indicators
+      ol.carousel-indicators
+        li.active(data-target='#sd-banner', data-slide-to='0')
+        li(data-target='#sd-banner', data-slide-to='1')
+        li(data-target='#sd-banner', data-slide-to='2')
+      // Slides
+      .carousel-inner(role='listbox')
+        .carousel-item.w-100.active
+          .bg-mask
+          .bg(style='background:url(../img/banner/sdwan_p1/banner_sdwan_p1_01.png) no-repeat center; background-size: cover')
+          a.banner-container(href="")
+            .text
+              h2 服務介紹
+              p 中華電信 SD-WAN 服務範圍涵蓋全球，建構企業強健且彈性的全球網路，並提供 ICT 整體規劃建置，為企業提供一站式的 Full management 服務
+
+        .carousel-item.w-100
+          .bg-mask
+          .bg(style='background:url(../img/banner/sdwan_p1/banner_sdwan_p1_02.png) no-repeat center; background-size: cover')
+          a.banner-container(href="")
+            .text
+              h2 服務介紹
+              p 中華電信 SD-WAN 服務範圍涵蓋全球，建構企業強健且彈性的全球網路，並提供 ICT 整體規劃建置，為企業提供一站式的 Full management 服務
+
+        .carousel-item.w-100
+          .bg-mask
+          .bg(style='background:url(../img/banner/sdwan_p1/banner_sdwan_p1_03.png) no-repeat center; background-size: cover')
+          a.banner-container(href="")
+            .text
+              h2 服務介紹
+              p 中華電信 SD-WAN 服務範圍涵蓋全球，建構企業強健且彈性的全球網路，並提供 ICT 整體規劃建置，為企業提供一站式的 Full management 服務
+
+  // article_a3 (articleA-left)
+  section.article_a3.py-6
+    .container
+      .row
+        .col-md-6.col-12
+          .photo
+            img(src='../img/article_a/article_a_sdwan_p1_01.png' alt='')
+        .col-md-6.col-12
+          h3 服務平台
+          div.text
+            p
+              | 中華電信 SD-WAN 服務平台建構於全球 60 個節點及 8 個海外 IDC 機房，結合中華電信 MPLS 網路、TWGate ManagedInternet 服務、中華電信衛星服務及各區域合作夥伴固定及行動網路，並於大陸、亞洲、東南亞、歐洲、美洲設置海外服務據點及建立全球服務生態網，為客戶打造在地化、一站式的服務平台。
+
+  // article_a4 (articleA-right)
+  section.article_a4.py-6
+    .container
+      .row
+        .col-md-6.col-12
+          .photo
+            img(src='../img/article_a/article_a_sdwan_p1_02.png' alt='')
+        .col-md-6.col-12
+          h3 解決方案
+          div.text
+            p
+              | 因應變化迅速的產業環境及各種網路及雲端服務的快速擴增，企業建置網路時必須考量到網路彈性且快速的布建。中華電信 SD-WAN 解決方案以 SD-WAN 技術結合各種優質網路及服務資源，為客戶提供連結地端與地端、地端與雲端的智慧化網路解決方案。
+
+
+  // article_b1 (left)
+  section.article_b1.py-6
+    .container
+      .row.justify-content-center
+        .col-12.title-area.pb-6
+          h3 重點功能
+          p 因應各種變換的網路環境及各種網路及雲端服務的快速擴增
+      .row
+        .col-12.col-md-6
+          img(src='../img/article_b/sdwan/article_b_sdwan_p1_01.svg' alt='')
+        .col-12.col-md-6
+          .text
+            h3 整合各種異質網路
+            p SD-WAN 可以整合 MPLS、Internet、行動網路、衛星網衛星網路提供企業強健且彈性的網路。
+
+  // article_b2(right)
+  section.article_b2.py-6
+    .container
+      .row
+        .col-md-6
+          img(src='../img/article_b/sdwan/article_b_sdwan_p1_02.svg' alt='')
+        .col-md-6
+          .text
+            h3 多樣性的分流機制
+            p 可以依據應用層、Port、IP提供 Active-Active 或 Active-Standby 的分流。
+
+  // article_b1(left)
+  section.article_b1.py-6
+    .container
+      .row
+        .col-md-6
+          img(src='../img/article_b/sdwan/article_b_sdwan_p1_03.svg' alt='')
+        .col-md-6
+          .text
+            h3 雲端統一設定管理
+            p 以 Web 介面完成全網的設定及異動。不必再一台一台設備進入設定。網頁中亦提供多種模版，提供快速設定的方式。
+
+  // article_b2(right)
+  section.article_b2.py-6
+    .container
+      .row
+        .col-md-6
+          img(src='../img/article_b/sdwan/article_b_sdwan_p1_04.svg' alt='')
+        .col-md-6
+          .text
+            h3 提供網管資訊分析
+            p 即時的網路品質分析、流量分析、頻寬使用報告，提供網管人員進行網路管理及網路 Policy 制定時必要的數據。
+
+  //contact
+  section.contact.bg-gray.py-5
+    .row.justify-content-center
+      .col-12.col-md-5.text-center
+        .title-area.text-center
+          h3 專人聯絡我
+          p 留下您的資料，我們將立刻提供專人諮詢服務
+        form(method="post" action="mailto:wishsky13@gmail.com" enctype="Text/Plain")
+          .row.justify-content-center
+            .col-12.col-md-6
+              input#username(type='text' name='username' placeholder='請輸入您的姓名')
+            .col-12.col-md-6
+              input#userphone(type='text' name='userphone' placeholder='請輸入手機號碼')
+            .col-12
+              input#companyname(type='text' name='username' placeholder='請輸入公司名稱')
+          .row.justify-content-center
+            .col-12
+              button.button(type='submit') 送出
+

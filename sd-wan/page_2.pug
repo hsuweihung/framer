@@ -1,0 +1,181 @@
+extends ../layouts/layout_2.pug
+block page-title
+  title  特色
+block content
+  // banner start
+  section.header
+    .container
+      nav.navbar.navbar-expand-md.navbar-light
+        a.navbar-brand.web(href='../index.html') 
+          img.change(src='../img/header/GXC_white.svg')
+        a.navbar-brand.web(href='index.html') 
+          img.svg(src='../img/header/sdwan_white.svg')
+        a.navbar-brand.mobile(href='../index.html') 
+          img(src='../img/header/GXC_colors.svg')
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#sd-nav', aria-controls='sd-nav', aria-expanded='false', )
+          span.navbar-toggler-icon
+        #sd-nav.collapse.navbar-collapse
+          .nav-bg
+          ul.navbar-nav
+            div.nav-close.close.mobile(data-toggle='collapse', data-target='#sd-nav', aria-controls='sd-nav', aria-expanded='false', )
+              span &times;
+            a.mobile(href='../index.html') 
+              img(src='../img/header/GXC_colors.svg')
+            li.nav-item.mobile
+              a(href='index.html') SD-WAN
+            li.nav-item
+              a(href='page_1.html') 服務介紹 
+            li.nav-item
+              a.active(href='page_2.html') 特色
+            li.nav-item
+              a(href='page_3.html') 解決方案
+            li.nav-item.navbardrop
+              a(href='page_4.html') 成功案例
+              a#sd-navbardrop.mobile.dropdown-toggle(href='page_4.html'  data-toggle="dropdown" aria-haspopup="true" aria-expanded="true") 
+              .dropdown-menu(aria-labelledby="sd-navbardrop")
+                a.dropdown-item(href='page_4_1.html') 運輸業
+                a.dropdown-item(href='') 保銳藥業
+                a.dropdown-item(href='') 玉山銀行
+  section.banner
+    #sd-banner.carousel.slide(data-ride='carousel')
+      // Indicators
+      ol.carousel-indicators
+        li.active(data-target='#sd-banner', data-slide-to='0')
+        li(data-target='#sd-banner', data-slide-to='1')
+        li(data-target='#sd-banner', data-slide-to='2')
+      // Slides
+      .carousel-inner(role='listbox')
+        .carousel-item.w-100.active
+          .bg-mask
+          .bg(style='background:url(../img/banner/sdwan_p2/banner_sdwan_p2_01.png) no-repeat center; background-size: cover')
+          a.banner-container(href="")
+            .text
+              h2 特色與優勢
+              p 超過190個國家/地區中的LTE/4G，提供客戶即時、安全的網路效能
+
+        .carousel-item.w-100
+          .bg-mask
+          .bg(style='background:url(../img/banner/sdwan_p2/banner_sdwan_p2_02.png) no-repeat center; background-size: cover')
+          a.banner-container(href="")
+            .text
+              h2 特色與優勢
+              p 超過190個國家/地區中的LTE/4G，提供客戶即時、安全的網路效能
+
+        .carousel-item.w-100
+          .bg-mask
+          .bg(style='background:url(../img/banner/sdwan_p2/banner_sdwan_p2_03.png) no-repeat center; background-size: cover')
+          a.banner-container(href="")
+            .text
+              h2 特色與優勢
+              p 超過190個國家/地區中的LTE/4G，提供客戶即時、安全的網路效能
+
+  // article_b1
+  section.article_b1.py-6
+    .container
+      .row
+        .col-12.col-md-6
+          img(src='../img/article_b/sdwan/article_b_sdwan_p2_01.svg' alt='')
+        .col-12.col-md-6
+          div.text
+            h3.b-padding 提供全方位的雲端服務
+            ul
+              li 豐富的雲端服務 (HiCloud、雲端語音服務、雲端視訊服務)，免去客戶自行建置與維運的負擔。
+              li 中華電信全球骨幹直連公有雲服務，為雲的存取提供穩健、安全的路徑。
+              li 專業的雲端諮詢團隊，提供雲端 ICT 整合解決方案及顧問服務。
+  // icon_a
+  section.icon_a.bg-gray.py-6
+    .container
+      .row
+        .col-12.text-center
+          .title-area
+            h3 以 SD-WAN 技術將網路智慧化
+      .card-area
+        .row.justify-content-center
+          .col-12.col-md-3
+            .icon-card
+              img(src='../img/ic_a/sdwan/p2_01.svg' alt='')
+              p 布建優質全球網路，提供MPLS VPN、EZ VPN、Internet、IPLC、衛星通信、行動網路等各項網路服務。
+
+          .col-12.col-md-3
+            .icon-card
+              img(src='../img/ic_a/sdwan/p2_02.svg' alt='')
+              p 以SD-WAN整合中華電信各項服務及其他異質網路，免除管理多種網路及設備的困惱，提供頻寬的彈性擴充與應用。
+
+          .col-12.col-md-3
+            .icon-card
+              img(src='../img/ic_a/sdwan/p2_03.svg' alt='')
+              p 打破傳統網路的限制，提供依據應用層、Port、IP 達成多樣性的分流設計。
+
+          .col-12.col-md-3
+            .icon-card
+              img(src='../img/ic_a/sdwan/p2_04.svg' alt='')
+              p 依照SLA (Packet loss、Latency、Jitter) 決定網路切換條件，達成傳輸品質的提升。
+
+  // article_b2
+  section.article_b2.py-6
+    .container
+      .row.justify-content-center
+        .col-12.col-md-6
+          img(src='../img/article_b/sdwan/article_b_sdwan_p2_02.svg' alt='')
+        .col-12.col-md-6
+          div.text
+            h3.b-padding Managed Internet 服務提供 SD-WAN Internet 優良的傳輸品質
+            ul
+              li 中華電信 TWGate 與各大 ISP 均有直連。
+              li 透過與各大 ISP 的協商提升客戶 Internet 到中華電信 SD-WAN 傳輸平台的傳輸品質。    
+  // icon_a
+  section.icon_a.bg-gray.py-6
+    .container
+      .row
+        .col-12.content-center
+          .title-area
+            h3 具備豐富的網路維運及網管資源
+      .card-area
+        .row
+          .col-12.col-md-3
+            .icon-card
+              img(src='../img/ic_a/sdwan/p2_05.svg' alt='')
+              p 7x24 NOC 專業值機人員，減輕客戶維運的負擔。
+          .col-12.col-md-3
+            .icon-card
+              img(src='../img/ic_a/sdwan/p2_06.svg' alt='')
+              p 提供全球的網路規劃及建置服務，為客戶打造穩健、安全、快速的網路環境。
+          .col-12.col-md-3
+            .icon-card
+              img(src='../img/ic_a/sdwan/p2_07.svg' alt='')
+              p 遍佈全球的服務據點及合作夥伴，提供在地化服務。
+          .col-12.col-md-3
+            .icon-card
+              img(src='../img/ic_a/sdwan/p2_08.svg' alt='')
+              p 中華電信自行研發的新世代網管系統，整合雲端與地端、IT＆CT 各種設備與電路的網管資訊。
+  // article_b1
+  section.article_b1.py-6
+    .container
+      .row
+        .col-12.col-md-6
+          img(src='../img/article_b/sdwan/article_b_sdwan_p2_03.svg' alt='')
+        .col-12.col-md-6
+          div.text
+            h3.b-padding 提供客製化 SD-WAN 建置及維運
+            ul
+              li 中華電信具豐富之 SD-WAN 建置及維運經驗，對各廠牌之 SD-WAN 均有深入了解，可依照客戶需求代建、代維各廠牌之 SD-WAN。
+  //contact
+  section.contact.bg-gray.py-5
+    .row.justify-content-center
+      .col-12.col-md-5.text-center
+        .title-area.text-center
+          h3 專人聯絡我
+          p 留下您的資料，我們將立刻提供專人諮詢服務
+        form(method="post" action="mailto:wishsky13@gmail.com" enctype="Text/Plain")
+          .row.justify-content-center
+            .col-12.col-md-6
+              input#username(type='text' name='username' placeholder='請輸入您的姓名')
+            .col-12.col-md-6
+              input#userphone(type='text' name='userphone' placeholder='請輸入手機號碼')
+            .col-12
+              input#companyname(type='text' name='username' placeholder='請輸入公司名稱')
+          .row.justify-content-center
+            .col-12
+              button.button(type='submit') 送出
+
+

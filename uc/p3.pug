@@ -1,0 +1,139 @@
+extends ../layouts/layout_2.pug
+block page-title
+  title U 通訊
+block content
+  // banner start
+  section.header
+    .container
+      nav.navbar.navbar-expand-md.navbar-light
+        a.navbar-brand.web(href='../index.html') 
+          img.change(src='../img/header/GXC_white.svg')
+        a.navbar-brand.web(href='index.html') 
+          img.svg(src='../img/header/uc_white.svg')
+        a.navbar-brand.mobile(href='../index.html') 
+          img(src='../img/header/GXC_colors.svg')
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#u-nav', aria-controls='u-nav', aria-expanded='true', )
+          span.navbar-toggler-icon
+        #u-nav.collapse.navbar-collapse
+          .nav-bg
+          ul.navbar-nav
+            div.nav-close.close.mobile(data-toggle='collapse', data-target='#u-nav', aria-controls='u-nav', aria-expanded='false', )
+              span &times;
+            a.mobile(href='../index.html') 
+              img(src='../img/header/GXC_colors.svg')
+            li.nav-item
+              a.mobile(href='index.html') U 產品
+            li.nav-item
+              a(href='p1.html') U 會議
+            li.nav-item
+              a(href='p2.html') U 簡報
+            li.nav-item
+              a.active(href='p3.html') U 通訊
+            li.nav-item
+              span.button#nav-login(onclick="location.href='https://u.cyberlink.com/user/signin'") 登入
+  section.banner
+    #sd-banner.carousel.slide(data-ride='carousel')
+      // Indicators
+      ol.carousel-indicators
+        li.active(data-target='#sd-banner', data-slide-to='0')
+        li(data-target='#sd-banner', data-slide-to='1')
+        li(data-target='#sd-banner', data-slide-to='2')
+      // Slides
+      .carousel-inner(role='listbox')
+        .carousel-item.w-100.active
+          .bg-mask
+          .bg(style='background:url(../img/banner/uc_p3/banner_uc_p3_01.png) no-repeat center; background-size: cover')
+          a.banner-container(href="")
+            .text
+              h2 U 通訊
+              p 聯絡商務夥伴就如社交般輕鬆寫意
+              //- button(href='') 立即登入
+
+        .carousel-item.w-100
+          .bg-mask
+          .bg(style='background:url(../img/banner/uc_p3/banner_uc_p3_02.png) no-repeat center; background-size: cover')
+          a.banner-container(href="")
+            .text
+              h2 U 通訊
+              p 聯絡商務夥伴就如社交般輕鬆寫意
+              //- button(href='') 立即登入
+
+        .carousel-item.w-100
+          .bg-mask
+          .bg(style='background:url(../img/banner/uc_p3/banner_uc_p3_03.png) no-repeat center; background-size: cover')
+          a.banner-container(href="")
+            .text
+              h2 U 通訊
+              p 聯絡商務夥伴就如社交般輕鬆寫意
+              //- button(href='') 立即登入 
+  // article_b1
+  section.article_b1.bg-gray.py-6
+    .container
+      .row
+        .col-12.col-md-6
+          img(src='../img/article_b/sdwan/article_b_sdwan_p2_01.svg' alt='')
+        .col-12.col-md-6
+          div.text
+            h3.b-padding 即時傳送訊息
+            ul
+              li 不定期更新免費貼圖，讓工作溝通更生動。
+              li 一鍵拖拉檔案，分享超容易。
+              li 分享網頁連結自動加上縮圖及標題，方便預覽內容。
+  // article_b2
+  section.article_b2.py-6
+    .container
+      .row
+        .col-12.col-md-6
+          img(src='../img/article_b/sdwan/article_b_sdwan_p2_01.svg' alt='')
+        .col-12.col-md-6
+          div.text
+            h3.b-padding 溝通新體驗
+            ul
+              li 分享相片同時強化影像品質或套用濾鏡。
+              li 「相片聊天」功能，可直接在相片中留下文字。
+              li 「討論牆」可快速發布群組公告。
+  // article_b1
+  section.article_b1.bg-gray.py-6
+    .container
+      .row
+        .col-12.col-md-6
+          img(src='../img/article_b/sdwan/article_b_sdwan_p2_01.svg' alt='')
+        .col-12.col-md-6
+          div.text
+            h3.b-padding 雲端通訊工具
+            ul
+              li 最多可邀請 100 名好友加入視訊聊天。
+              li 活用趣味職人系列貼圖，為溝通增添樂趣。
+              li 可於個人檔案中加入狀態設定，打造專屬電子名片。
+  //article_c
+  section.article_c.py-6
+    .container
+      .row
+        .col-12.col-md-6
+          .img
+            img(src='../img/article_c/article_c_uc_02.svg') 
+        .col-12.col-md-6
+          div.text
+            h2 U 通訊各方案比較表
+            p 訊連科技保留隨時修改方案條款之權利，不另行通知。
+            a.gxc-more(href='https://u.cyberlink.com/download')
+              | 進一步了解
+              img.icon(src='../img/ic/common/arrow_right.svg')
+  //contact
+  section.contact.bg-gray.py-5
+    .row.justify-content-center
+      .col-12.col-md-5.text-center
+        .title-area.text-center
+          h3 專人聯絡我
+          p 留下您的資料，我們將立刻提供專人諮詢服務
+        form(method="post" action="mailto:wishsky13@gmail.com" enctype="Text/Plain")
+          .row.justify-content-center
+            .col-12.col-md-6
+              input#username(type='text' name='username' placeholder='請輸入您的姓名')
+            .col-12.col-md-6
+              input#userphone(type='text' name='userphone' placeholder='請輸入手機號碼')
+            .col-12
+              input#companyname(type='text' name='username' placeholder='請輸入公司名稱')
+          .row.justify-content-center
+            .col-12
+              button.button(type='submit') 送出

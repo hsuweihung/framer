@@ -1,0 +1,107 @@
+extends ../layouts/layout_2.pug
+block page-title
+  title  智慧應用服務 
+block content
+  section.banner
+    #a-bannar.carousel.slide(data-ride='carousel')
+      // Indicators
+      ol.carousel-indicators
+        li.active(data-target='#a-bannarr', data-slide-to='0')
+        li(data-target='#a-bannar', data-slide-to='1')
+        li(data-target='#a-bannar', data-slide-to='2')
+      // Slides
+      .carousel-inner(role='listbox')
+        .carousel-item.w-100.active
+          .bg-mask
+          .bg(style='background:url(../img/banner/cat_a/banner_cat_a_01.png) no-repeat center; background-size: cover')
+          a.banner-container(href="")
+            .text
+              h2 智慧應用服務
+              p 超過 190 個 國家/地區中的 LTE / 4G，提供客戶即時、安全的網路效能
+        .carousel-item.w-100
+          .bg-mask
+          .bg(style='background:url(../img/banner/cat_a/banner_cat_a_02.png) no-repeat center; background-size: cover')
+          a.banner-container(href="")
+            .text
+              h2 智慧應用服務
+              p 超過 190 個 國家/地區中的 LTE / 4G，提供客戶即時、安全的網路效能
+        .carousel-item.w-100
+          .bg-mask
+          .bg(style='background:url(../img/banner/cat_a/banner_cat_a_03.png) no-repeat center; background-size: cover')
+          a.banner-container(href="")
+            .text
+              h2 智慧應用服務
+              p 超過 190 個 國家/地區中的 LTE / 4G，提供客戶即時、安全的網路效能
+  section.card_e.py-5
+    .container
+      div.title-area
+      div.row
+        div.col-12.col-md-4
+          div.card
+            a.img-card(href="")
+              div.card-bg
+                img(alt='',src='../img/card_e/cat_a/card_e_cat_a_iot.png')
+              div.card-text_a_e
+                h4
+                  img(alt='', src='../img/ic/cat_a/ic_cat_a_iot.svg') 
+                  | 物聯網整合
+                p.ellipsis 可靠、高品質的轉數網路設備。
+              p.gxc-more( href='#') 
+                | 進一步了解
+                img(alt='',src='../img/ic/common/arrow_right.svg')
+          div.card-bottom-l
+        div.col-12.col-md-4
+          div.card
+            a.img-card(href="")
+              div.card-bg
+                img(alt='',src='../img/card_e/cat_a/card_e_cat_a_bigdata.png')
+              div.card-text_a_e
+                h4
+                  img(alt='', src='../img/ic/cat_a/ic_cat_a_bigdata.svg') 
+                  | 大數據分析
+                p.ellipsis 可靠、高品質的轉數網路設備。
+              p.gxc-more( href='#') 
+                | 進一步了解
+                img(alt='',src='../img/ic/common/arrow_right.svg')
+          div.card-bottom-l
+        div.col-12.col-md-4
+          div.card
+            a.img-card(href="")
+              div.card-bg
+                img(alt='',src='../img/card_e/cat_a/card_e_cat_a_ai.png')
+              div.card-text_a_e
+                h4
+                  img(alt='', src='../img/ic/cat_a/ic_cat_a_ai.svg') 
+                  | AI 開發
+                p.ellipsis 可靠、高品質的轉數網路設備。
+              p.gxc-more( href='#') 
+                | 進一步了解
+                img(alt='',src='../img/ic/common/arrow_right.svg')
+          div.card-bottom-l
+        div.col-12.col-md-4
+          div.card
+            a.img-card(href="")
+              div.card-bg
+                img(alt='',src='../img/card_e/cat_a/card_e_cat_a_fintech.png')
+              div.card-text_a_e
+                h4
+                  img(alt='', src='../img/ic/cat_a/ic_cat_a_fintech.svg') 
+                  | FinTech 開發整合
+                p.ellipsis 可靠、高品質的轉數網路設備。
+              p.gxc-more( href='#') 
+                | 進一步了解
+                img(alt='',src='../img/ic/common/arrow_right.svg')
+          div.card-bottom-l
+  //icon_c
+  section.icon_c.bg-gray.py-4
+    .container
+      div.title-area
+        h2 合作夥伴
+        p 服務全球超過 30 萬以上的企業，深受頂尖的企業信賴
+      .row.justify-content-center
+        .icon-area
+          img(src="../img/con-icon1.png", alt="")
+          img(src="../img/con-icon2.png", alt="")
+          img(src="../img/con-icon3.png", alt="")
+          img(src="../img/con-icon4.png", alt="")
+          img(src="../img/con-icon5.png", alt="")

@@ -1,0 +1,303 @@
+extends ../layouts/layout_2.pug
+block page-title
+  title  SD-WAN
+block content
+  // banner start
+  section.header
+    .container
+      nav.navbar.navbar-expand-md.navbar-light
+        a.navbar-brand.web(href='../index.html') 
+          img.change(src='../img/header/GXC_white.svg')
+        a.navbar-brand.web(href='index.html') 
+          img.svg(src='../img/header/sdwan_white.svg')
+        a.navbar-brand.mobile(href='../index.html') 
+          img(src='../img/header/GXC_colors.svg')
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#sd-nav', aria-controls='sd-nav', aria-expanded='false', )
+          span.navbar-toggler-icon
+        #sd-nav.collapse.navbar-collapse
+          .nav-bg
+          ul.navbar-nav
+            div.nav-close.close.mobile(data-toggle='collapse', data-target='#sd-nav', aria-controls='sd-nav', aria-expanded='false', )
+              span &times;
+            a.mobile(href='../index.html') 
+              img(src='../img/header/GXC_colors.svg')
+            li.nav-item.mobile
+              a(href='index.html') SD-WAN
+            li.nav-item
+              a(href='page_1.html') 服務介紹 
+            li.nav-item
+              a(href='page_2.html') 特色
+            li.nav-item
+              a(href='page_3.html') 解決方案
+            li.nav-item.navbardrop
+              a(href='page_4.html') 成功案例
+              a#sd-navbardrop.mobile.dropdown-toggle(href='page_4.html'  data-toggle="dropdown" aria-haspopup="true" aria-expanded="true") 
+              .dropdown-menu(aria-labelledby="sd-navbardrop")
+                a.dropdown-item(href='page_4_1.html') 運輸業
+                a.dropdown-item(href='') 保銳藥業
+                a.dropdown-item(href='') 玉山銀行
+
+  section.banner
+    #sd-banner.carousel.slide(data-ride='carousel')
+      // Indicators
+      ol.carousel-indicators
+        li.active(data-target='#sd-banner', data-slide-to='0')
+        li(data-target='#sd-banner', data-slide-to='1')
+        li(data-target='#sd-banner', data-slide-to='2')
+      // Slides
+      .carousel-inner(role='listbox')
+        .carousel-item.w-100.active
+          .bg-mask
+          .bg(style='background:url(../img/banner/sdwan/banner_sdwan_01.png) no-repeat center; background-size: cover')
+          a.banner-container(href="")
+            .text
+              h2 SD-WAN Service
+              p 超過 190 個 國家/地區中的 LTE / 4G，提供客戶即時、安全的網路效能
+
+        .carousel-item.w-100
+          .bg-mask
+          .bg(style='background:url(../img/banner/sdwan/banner_sdwan_02.png) no-repeat center; background-size: cover')
+          a.banner-container(href="")
+            .text
+              h2 SD-WAN Service
+              p 超過 190 個 國家/地區中的 LTE / 4G，提供客戶即時、安全的網路效能
+
+        .carousel-item.w-100
+          .bg-mask
+          .bg(style='background:url(../img/banner/sdwan/banner_sdwan_03.png) no-repeat center; background-size: cover')
+          a.banner-container(href="")
+            .text
+              h2 SD-WAN Service
+              p 超過 190 個 國家/地區中的 LTE / 4G，提供客戶即時、安全的網路效能
+
+
+  // article_a1 (articleA-left)
+  section.article_a1.py-6
+    .container
+      .row
+        .col-md-6.col-12
+          .photo
+            img(src='../img/article_a/article_a_sdwan_01.png' alt='')
+        .col-md-6.col-12
+          h3 服務介紹
+          div.text
+            p
+              | 中華電信 SD-WAN 服務範圍涵蓋全球，建構企業強健且彈性的全球網路，並提供 ICT 整體規劃建置，為企業提供一站式的 Full management 服務。
+            a.gxc-more(href='page_1.html')
+              | 進一步了解
+              img.icon(src='../img/ic/common/arrow_right.svg')
+  // article_a2 (articleA-right)
+  //section.article_a2.py-6
+    .container
+      .row
+        .col-md-6.col-12
+          .photo
+            img(src='../img/article_a/article_a_sdwan_01.png' alt='')
+        .col-md-6.col-12
+          h3 最佳化的服務
+          div.text
+            p
+              | GXC 產品隨即可用，功能強大，可幫助任意企業改善其支援運營。我們的平台可發展與擴容，所以適合任意規模的企業，無論是創業公司還是大型企業。
+            a.gxc-more(href='page_1.html')
+              | 進一步了解
+              img.icon(src='../img/ic/common/arrow_right.svg')
+  // card_a
+  section.card_a.bg-gray.py-3
+    .container
+      .row.justify-content-md-center
+        .col-12.title-area
+          h3 特色與優勢
+          p 我們的客戶服務與參與產品功能強大而具有靈活性，並可根據任何企業的需求進行擴容
+      .row
+        .col-lg-4
+          div.card
+            .img-card(href='page_2.html')
+              div.card-bg
+                img(alt='' src='../img/card_a/sdwan/card_a_sdwan_01.png')
+              div.card-text_a_e
+                h4 以 SD-WAN 將網路智慧化
+                p 佈建優質全球網路，提供 MPLSVPN、EZVPN、internet、IPLC、衛星通信、行動網路等各項網路服務。
+                a.gxc-more(href='page_2.html')
+                  | 進一步了解
+                  img.icon(src='../img/ic/common/arrow_right.svg')
+          div.card-bottom-l
+        .col-lg-4
+          div.card
+            .img-card(href='page_2.html')
+              div.card-bg
+                img(alt='' src='../img/card_a/sdwan/card_a_sdwan_02.png')
+              div.card-text_a_e
+                h4 豐富的網路維運及網管資源
+                p 提供全球的網路規劃及建置服務，為客戶打造穩健、安全、快速的網路環境。
+                a.gxc-more(href='page_2.html')
+                  | 進一步了解
+                  img.icon(src='../img/ic/common/arrow_right.svg')
+          div.card-bottom-l
+        .col-lg-4
+          div.card
+            .img-card(href='page_2.html')
+              div.card-bg
+                img(alt='' src='../img/card_a/sdwan/card_a_sdwan_03.png')
+              div.card-text_a_e
+                h4 提供全方位的雲端服務
+                p 豐富的雲端服務 (HiCloud、雲端語音服務、雲端視訊服務)，免去客戶自行建置與維運的負擔。
+                a.gxc-more(href='page_2.html')
+                  | 進一步了解
+                  img.icon(src='../img/ic/common/arrow_right.svg')
+          div.card-bottom-l
+  // card_b
+  section.card_b.py-3
+    .container
+      .row.justify-content-md-center
+        .title-area
+            h3 客戶需求與解決方案
+            p 我們的客戶服務與參與產品功能強大而具有靈活性，並可根據任何企業的需求進行擴容
+      .row
+        .col-lg-4
+          div.card
+            .img-card
+              div.card-bg
+                img(alt='' src='../img/card_b/sdwan/card_b_sdwan_01.png')
+              div.card-text
+                h4 簡化管理與設定
+                p 客戶以 MPLS 及 Internet 作分流，設定複雜。
+                a.gxc-more(href='page_3.html')
+                  | 查看解決方案
+                  img(src='../img/ic/common/arrow_right.svg')
+          div.card-bottom-l
+        .col-lg-4
+          div.card
+            .img-card
+              div.card-bg
+                img(alt='' src='../img/card_b/sdwan/card_b_sdwan_02.png')
+              div.card-text
+                h4 應用分流與服務品質
+                p Internet 的 lantency 及 Packet loss 經常發生變化，造成傳輸品質不良，但卻無法切換至 MPLS。
+                a.gxc-more(href='page_3.html')
+                  | 查看解決方案
+                  img(src='../img/ic/common/arrow_right.svg')
+          div.card-bottom-l
+        .col-lg-4
+          div.card
+            .img-card
+              div.card-bg
+                img(alt='' src='../img/card_b/sdwan/card_b_sdwan_03.png')
+              div.card-text
+                h4 提升公有雲傳輸品質
+                p 透過網際網路品質存取 AWS 的品質不易掌控，且可能遇到封網問題。
+                a.gxc-more(href='page_3.html')
+                  | 查看解決方案
+                  img(src='../img/ic/common/arrow_right.svg')
+          div.card-bottom-l
+  //icon_c
+  section.icon_c.bg-gray.py-5
+    .container
+      div.title-area
+        h3 合作夥伴
+        p 服務全球超過 30 萬以上的企業，深受頂尖的企業信賴
+      .row.justify-content-center
+        .icon-area
+          img(src="../img/con-icon1.png", alt="")
+          img(src="../img/con-icon2.png", alt="")
+          img(src="../img/con-icon3.png", alt="")
+          img(src="../img/con-icon4.png", alt="")
+          img(src="../img/con-icon5.png", alt="")
+  //card_e
+  section.card_e.py-3
+    .container
+      div.title-area
+        h3 精選案例
+        p 中華電信 SD-WAN 服務範圍涵蓋全球，建構企業強健且彈性的全球網路
+      div.row
+        div.col-12.col-md-4
+          div.card
+            a.img-card(href="")
+              div.card-bg
+                img(alt='',src='../img/card_e/cat_a/card_e_cat_a_iot.png')
+              div.card-text_a_e
+                h4 長榮航空
+                p.ellipsis 提供骨幹技術，具有數據中心服務
+              p.gxc-more( href='page_4_1.html')
+                | 查看此案例
+                img(alt='',src='../img/ic/common/arrow_right.svg')
+          div.card-bottom-s
+        div.col-12.col-md-4
+          div.card
+            a.img-card(href="")
+              div.card-bg
+                img(alt='',src='../img/card_e/cat_a/card_e_cat_a_bigdata.png')
+              div.card-text_a_e
+                h4 保銳藥業
+                p.ellipsis 提供骨幹技術，具有數據中心服務
+              p.gxc-more( href='#') 
+                | 查看此案例
+                img(alt='',src='../img/ic/common/arrow_right.svg')
+          div.card-bottom-s
+        div.col-12.col-md-4
+          div.card
+            a.img-card( href='page_4_1.html') 
+              div.card-bg
+                img(alt='',src='../img/card_e/cat_a/card_e_cat_a_ai.png')
+              div.card-text_a_e
+                h4 玉山銀行
+                p.ellipsis 提供骨幹技術，具有數據中心服務
+              p.gxc-more( href='#') 
+                | 查看此案例
+                img(alt='',src='../img/ic/common/arrow_right.svg')
+          div.card-bottom-s
+      .row
+        a.gxc-more_b_e( href='page_4.html') 
+          | 更多成功案例
+          img(alt='',src='../img/ic/common/arrow_right.svg')
+  //contact
+  section.contact.bg-gray.py-5
+    .row.justify-content-center
+      .col-12.col-md-5.text-center
+        .title-area.text-center
+          h3 專人聯絡我
+          p 留下您的資料，我們將立刻提供專人諮詢服務。
+        form(method="post" action="mailto:wishsky13@gmail.com" enctype="Text/Plain")
+          .row.justify-content-center
+            .col-12.col-md-6
+              input#username(type='text' name='username' placeholder='請輸入您的姓名')
+            .col-12.col-md-6
+              input#userphone(type='text' name='userphone' placeholder='請輸入手機號碼')
+            .col-12
+              input#companyname(type='text' name='username' placeholder='請輸入公司名稱')
+          .row.justify-content-center
+            .col-12
+              button.button(type='submit') 送出
+  //footer
+    section.footer.bg-gray
+      .container
+        .row
+          .col-12
+            a(href="")
+              | GXC 首頁
+              img
+            a(href="")
+              | 企業網路
+              img
+            a(href="")
+              | SD-Wan
+              img
+        .row
+          .col-md-4
+            .misc-links
+              a(href='#')
+                | 網站地圖
+              a(href='')
+                | 會員中心
+              a(href='http://mod.cht.com.tw/')
+                | 手機版
+          .col-md-4
+            .official-links
+              a(href='http://mod.cht.com.tw/')
+                img(src="", alt="")
+              a(href='https://www.hinet.net/')
+                img(src="", alt="")
+              a(href='https://www.emome.net/')
+                img(src="", alt="")
+          .col-md-4
+            .copyright
+              p.miniature 中華電信股份有限公司版權所有 © Chunghwa Telecom Co., Ltd. All Rights Reserved.

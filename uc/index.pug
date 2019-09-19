@@ -1,0 +1,175 @@
+extends ../layouts/layout_2.pug
+block page-title
+  title U 產品
+block content
+  // banner start
+  section.header
+    .container
+      nav.navbar.navbar-expand-md.navbar-light
+        a.navbar-brand.web(href='../index.html') 
+          img.change(src='../img/header/GXC_white.svg')
+        a.navbar-brand.web(href='index.html') 
+          img.svg(src='../img/header/uc_white.svg')
+        a.navbar-brand.mobile(href='../index.html') 
+          img(src='../img/header/GXC_colors.svg')
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#u-nav', aria-controls='u-nav', aria-expanded='true', )
+          span.navbar-toggler-icon
+        #u-nav.collapse.navbar-collapse
+          .nav-bg
+          ul.navbar-nav
+            div.nav-close.close.mobile(data-toggle='collapse', data-target='#u-nav', aria-controls='u-nav', aria-expanded='false', )
+              span &times;
+            a.mobile(href='../index.html') 
+              img(src='../img/header/GXC_colors.svg')
+            li.nav-item
+              a.mobile(href='index.html') U 產品
+            li.nav-item
+              a(href='p1.html') U 會議
+            li.nav-item
+              a(href='p2.html') U 簡報
+            li.nav-item
+              a(href='p3.html') U 通訊
+            li.nav-item
+              a
+                span.button#nav-login(onclick="location.href='https://u.cyberlink.com/user/signin'") 登入
+  section.banner
+
+    #u-banner.carousel.slide(data-ride='carousel')
+      // Indicators
+      ol.carousel-indicators
+        li.active(data-target='#u-banner', data-slide-to='0')
+        li(data-target='#u-banner', data-slide-to='1')
+        li(data-target='#u-banner', data-slide-to='2')
+      // Slides
+      .carousel-inner(role='listbox')
+        .carousel-item.w-100.active
+          .bg-mask
+          .bg(style='background:url(../img/banner/uc/banner_uc_01.png) no-repeat center; background-size: cover')
+          a.banner-container(href="")
+            .text
+              h2 U 產品
+              p 讓商務溝通輕鬆寫意，操作流暢極速上手
+              //- button(href='') 立即登入
+        .carousel-item.w-100
+          .bg-mask
+          .bg(style='background:url(../img/banner/uc/banner_uc_02.png) no-repeat center; background-size: cover')
+          a.banner-container(href="")
+            .text
+              h2 U 產品
+              p 讓商務溝通輕鬆寫意，操作流暢極速上手
+              //- button(href='') 立即登入
+
+        .carousel-item.w-100
+          .bg-mask
+          .bg(style='background:url(../img/banner/uc/banner_uc_03.png) no-repeat center; background-size: cover')
+          a.banner-container(href="")
+            .text
+              h2 U 產品
+              p 讓商務溝通輕鬆寫意，操作流暢極速上手
+
+  // article_a1
+  section.article_a1.py-5
+    .container
+      .row
+        .col-md-6.col-12
+          .photo
+            img(src='../img/article_a/article_a_uc_01.png' alt='')
+        .col-md-6.col-12
+          h3 U 會議
+          div.text
+            p
+              | 有了Ｕ會議，您在其他視訊會議平台所遇到的問題都可迎刃而解。無論您身在何時何處使用何種裝置，都可立刻和工作夥伴或客戶進行多人、高品質的視訊會議。
+            a.gxc-more(href='p1.html')
+              | 進一步了解
+              img.icon(src='../img/ic/common/arrow_right.svg')
+  // article_a2
+  section.article_a2.py-5
+    .container
+      .row
+        .col-md-6.col-12
+          .photo
+            img(src='../img/article_a/article_a_uc_02.png' alt='')
+        .col-md-6.col-12
+          h3 U 簡報
+          div.text
+            p
+              | Ｕ簡報為一款專為企業行銷活動和遠距教學設計的直播平台，無論是行銷活動直播、線上發表會、線上法說會、遠距商業簡報或遠距教學，都可使用Ｕ簡報（直播）輕鬆分享視訊、PowerPoint 和螢幕。
+            a.gxc-more(href='p2.html')
+              | 進一步了解
+              img.icon(src='../img/ic/common/arrow_right.svg')
+  // article_a1
+  section.article_a1.py-5
+    .container
+      .row
+        .col-md-6.col-12
+          .photo
+            img(src='../img/article_a/article_a_uc_03.png' alt='')
+        .col-md-6.col-12
+          h3 U 通訊
+          div.text
+            p
+              | 提供不同於其他免費通訊 App 的全新體驗，擁有活用即時通訊、影片或檔案分享、語音訊息傳送、建立討論牆等一系列工具，讓你方便快速協調工作內容和保持良好聯繫。
+            a.gxc-more(href='p3.html')
+              | 進一步了解
+              img.icon(src='../img/ic/common/arrow_right.svg')
+  // article_a2
+  section.article_a2.py-5
+    .container
+      .row
+        .col-md-6.col-12
+          .photo
+            img(src='../img/article_a/article_a_uc_04.png' alt='')
+        .col-md-6.col-12
+          h3 下載
+          div.text
+            p
+              | U 集結線上會議、簡報直播、即時通訊三大服務，讓工作更輕鬆寫意。立即下載體驗不同以往的聊天功能，如：回收訊息、排程發送或相片聊天；還能透過不同裝置，輕鬆進行高品質的視訊會議、遠距簡報、產品發表會或排程預錄教學課程。
+            a.gxc-more(href='https://u.cyberlink.com/download')
+              | 進一步了解
+              img.icon(src='../img/ic/common/arrow_right.svg')
+  // icon_a
+  section.icon_a.py-5
+    .container
+      .row
+        .col-12.text-center
+          .title-area
+            h3 特色與優勢
+            p 無論是線上直播或視訊會議Ｕ都是您的最佳選擇
+      .card-area
+        .row
+          .col-12.col-md-4
+            .icon-card
+              img(src='../img/ic_a/sdwan/p2_01.svg' alt='')
+              h3 建置簡單，輕鬆上手
+              p Ｕ服務採用公用雲架構，無須自行架設伺服器和額外維護費用，可大幅減低企業資訊支出。對於企業內部用戶，無論是參與會議或是舉辦直播活動，都可快速上手，降低內部用戶學習障礙、發揮即戰力。
+
+          .col-12.col-md-4
+            .icon-card
+              img(src='../img/ic_a/sdwan/p2_02.svg' alt='')
+              h3 讓與會者輕鬆參與
+              p 無論觀眾和與會者身在何處，除了透過 Windows、Mac、iOS 和 Android 專用 App 跨平台參與，亦可使用瀏覽器，免安裝額外插件，即可輕鬆觀看 Live 直播或參與視訊會議。
+
+          .col-12.col-md-4
+            .icon-card
+              img(src='../img/ic_a/sdwan/p2_03.svg' alt='')
+              h3 絕佳的影音品質
+              p Ｕ簡報和Ｕ會議提供高畫質、低延遲的直播及線上會議，觀眾和會議參加者如臨現場，即時互動零時差。Ｕ簡報的高品質雲端隨選及獨創智慧索引功能，就算錯過直播，也可讓觀眾即刻回看。
+  
+  //contact
+  section.contact.bg-gray.py-5
+    .row.justify-content-center
+      .col-12.col-md-5.text-center
+        .title-area.text-center
+          h3 專人聯絡我
+          p 留下您的資料，我們將立刻提供專人諮詢服務
+        form(method="post" action="mailto:wishsky13@gmail.com" enctype="Text/Plain")
+          .row.justify-content-center
+            .col-12.col-md-6
+              input#username(type='text' name='username' placeholder='請輸入您的姓名')
+            .col-12.col-md-6
+              input#userphone(type='text' name='userphone' placeholder='請輸入手機號碼')
+            .col-12
+              input#companyname(type='text' name='username' placeholder='請輸入公司名稱')
+          .row.justify-content-center
+            .col-12
+              button.button(type='submit') 送出
