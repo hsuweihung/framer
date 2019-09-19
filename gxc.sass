@@ -1,0 +1,1813 @@
+// All   
+section
+    overflow: hidden
+    display: block
+    width: 100%
+    p,li
+        font-size: 20px
+        font-weight: 300
+    .title-area 
+        text-align: center
+        padding-top: 1.25rem
+        padding-bottom: 1.25rem
+        h3
+            font-size: 32px
+            font-weight: 500
+        p
+            font-size: 20px 
+            font-weight: 400 
+            color:#7F7F7F 
+            padding-top: 5px
+    .big-title
+        h3
+            font-size: 48px 
+            font-weight: 600 
+            padding-top: 00px
+        p 
+            padding-top: 10px
+.card
+  div .button, p .button
+    position: relative
+    left: 50%
+    -webkit-transform: translateX(-50%)
+    -ms-transform: translateX(-50%)
+    transform: translateX(-50%)
+
+.card
+    border-radius: .8rem !important
+    -webkit-box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.13)
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.13)
+    -webkit-transition: all .3s
+    -o-transition: all .3s
+    transition: all .3s
+    overflow: hidden
+    position: relative
+    &:hover
+        -webkit-box-shadow: 0px 0.4rem 0.6rem rgba(0, 0, 0, 0.25)
+        box-shadow: 0px 0.4rem 0.6rem rgba(0, 0, 0, 0.25)
+    .img-card
+        display: block
+        overflow: hidden
+        width: 100%
+        height: 100%
+        // position: absolute
+    .card-text 
+        padding: 1.2rem
+    .card-bg
+        img
+            width: 100%
+            height: auto
+
+.card-bottom-l
+    height: 40px 
+.card-bottom-m
+    height: 20px 
+.card-bottom-s
+    height: 10px 
+
+
+.ellipsis
+    width: 100%
+    text-overflow: ellipsis
+    overflow: hidden
+    white-space: nowrap
+    // display: inline-block
+
+.card-text_a_e 
+    position: absolute
+    background: #FFF
+    color: #000
+    width: 100%
+    height: 2000px
+    z-index: 1000
+    -webkit-transition:  0.35s
+    transition:  0.35s
+    overflow: hidden
+    word-wrap: break-word
+
+.card_h2 
+    margin-top: 20px
+    font-size: 30px
+    font-weight: 500
+    
+.card-bg
+    -webkit-transition: 0.35s
+    transition: 0.35s
+
+.gxc-more, .gxc-more_b_e
+    font-weight: 500
+    font-size: 20px
+    z-index: 1000
+    color: #1F9CFF
+.gxc-more
+    position: absolute
+    &:hover 
+        text-decoration: underline
+        color: #1F9CFF 
+.gxc-more_b_e
+    position: relative
+img
+    margin-top: -5px
+
+span.button, button.button
+    display: inline-block
+    -webkit-transform: scale(1)
+    -ms-transform: scale(1)
+    transform: scale(1)
+    -webkit-tap-highlight-color: transparent
+    -webkit-transition: all .1s
+    -o-transition: all .1s
+    transition: all .1s
+    -webkit-box-shadow: 0px 0.2em 1.4em rgba(32, 156, 255, 0.3)
+    box-shadow: 0px 0.2em 1.4em rgba(32, 156, 255, 0.3)
+    border-radius: 100px
+    text-align: center
+    cursor: pointer
+    &:hover
+        text-decoration: none
+        -webkit-transform: scale(1.04)
+        -ms-transform: scale(1.04)
+        transform: scale(1.04)
+    &:active
+        -webkit-transform: scale(0.94)
+        -ms-transform: scale(0.94)
+        transform: scale(0.94)
+
+.fixednav-web
+    position: fixed  
+    top: 100px
+    width: 100%
+    z-index: 999
+    margin-left: -15px
+    // -webkit-transition: all 0.3s ease
+    // -moz-transition: all 0.3s ease
+    // -o-transition: all 0.3s ease
+    // transition: all 0.3s ease
+ 
+.bg-gray
+    background-color: #F5F5F5
+
+.banner ~ .solution
+    padding-top: 0em
+.banner ~ .article_a3,.banner ~ .article_a1
+    // padding-top: 8em
+    // padding-bottom: 5em
+.article_a2 ~ .article_a1
+    // padding-top: 5em
+
+.banner + .article_b1
+    // padding-bottom: 5em
+
+
+@media (max-width:575.98px)
+    .fixednav  
+        top: 63px
+        position: fixed  
+        width: 100%
+        z-index: 999
+        margin-left: 0px
+    section
+        padding-bottom: 2.5rem 
+        .title-area
+            padding-top: 0.5rem 
+            padding-bottom: 0.5rem 
+            padding: 10px 40px
+            h3
+                font-size: 26px !important
+                font-weight: 500 !important
+                padding-top: 0px
+            p
+                font-size: 16px !important
+    .py-6,.pt-6
+        padding-top: 1rem !important
+    .py-6,.pb-6
+        padding-bottom: 1rem !important
+    
+    .card-bottom-l,.card-bottom-m 
+        height: 20px 
+    .card-bottom-s
+        height: 10px 
+                
+    .banner ~ .article_a1,.banner ~ .article_a3 
+        padding-top: 0rem !important
+        padding-bottom: 0rem !important
+//banner
+.header
+    position: fixed
+    z-index: 4000
+    -webkit-transition: all 0.2s ease
+    -moz-transition: all 0.2s ease
+    -o-transition: all 0.2s ease
+    transition: all 0.2s ease
+    .navbar
+        width: 100%
+        padding: 3% 0% 2% 0%
+        .navbar-brand
+            margin-right: 30px
+            &:hover
+                .svg
+                    filter: invert(0.4) sepia(1) saturate(20) hue-rotate(187.2deg) brightness(0.92);
+        .mobile
+            display: none
+        .navbar-nav
+            margin-left: 30%
+            .nav-item
+                font-weight: 300
+                font-size: 18px
+                // margin-top: 2%
+                text-align: center
+                width: 140px
+                max-htight: 50px
+                a
+                    vertical-align: middle
+                    -webkit-transform: perspective(1px) translateZ(0)
+                    transform: perspective(1px) translateZ(0)
+                    position: relative
+                    overflow: hidden
+                    color: #FFF
+                    &:hover
+                        text-decoration: none
+                    &:before
+                        color:#FFF 
+                        content: ""
+                        position: absolute
+                        left: 0
+                        right: 100%
+                        bottom: 0
+                        background: #FFF
+                        height: 1px
+                        -webkit-transition-property: right
+                        transition-property: right
+                        -webkit-transition-duration: 0.4s
+                        transition-duration: 0.4s
+                        -webkit-transition-timing-function: ease-out
+                        transition-timing-function: ease-out
+                    &:hover:before, &:focus:before, 
+                        right: 0
+                        color:#FFF 
+                a.active
+                    border-bottom: 1px solid #FFF
+                a.active:before
+                    left: 1
+                    height: 0px
+                .button
+                    margin-top: -20%
+                    font-size: 16px
+                    background: #209cff
+                    color: #fafafa
+                    width: 120px
+                    padding: .8em 2em
+    #sd-nav
+        .navbar-nav
+            margin-left: 45%
+
+.navbar-scrolled
+    background-color: #ffffff
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15)
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15)
+    -webkit-transition: all 0.3s ease
+    -moz-transition: all 0.3s ease
+    -o-transition: all 0.3s ease
+    transition: all 0.3s ease
+    .navbar-brand
+        .svg
+            filter: invert(0.7)
+    .navbar-nav
+        .nav-item
+            a
+                color: #000 !important
+                &:before
+                    color: #000 !important
+                    background: #000 !important
+                &:hover:before, &:focus:before, 
+                    color: #000!important
+            a.active
+                    border-bottom: 1px solid #000 !important
+
+.banner
+    .carousel-inner
+        .carousel-item
+            .bg-mask
+                z-index: 5
+                position: absolute
+                width: 100%
+                height: 100%
+                background-color: #000
+                opacity: 0.3
+            .bg
+                height: 500px
+            .banner-container
+                position: absolute
+                right: 15%
+                bottom: 20px
+                left: 15%
+                top: 40%
+                z-index: 10
+                padding-top: 0px
+                padding-bottom: 20px
+                color: #fff
+                text-decoration: none
+                .text
+                    margin-left: 20%
+                    h2
+                        font-size: 32px
+                        font-weight: 400
+                    p 
+                        font-weight: 200
+                        max-width: 500px
+@media (max-width:575.98px)
+    
+    .header
+        padding-bottom: 0em
+        #sd-nav
+            .navbar-nav
+                margin-left: auto
+        .mobile
+            display: inline !important
+            margin: 0px
+        .web
+            display: none
+        .container
+            width: 100%
+        .navbar
+            position: fixed
+            width: 105%
+            background-color: #FFF
+            margin-left: -5%
+            padding: 0.6em 0em
+            -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15)
+            box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15)
+            img
+                width: 50px
+            .navbar-brand
+                margin-top: 5px
+                width: auto  
+                margin-left: auto
+                margin-right: auto
+                
+            .navbar-toggler
+                position: absolute
+                top: 16px
+                left: 10px
+                border: 0px
+                color: #000 !important
+                .navbar-toggler-icon
+                    color: #000 !important
+                    width: 1.3em
+                    height: 1.3em
+            .navbar-collapse
+                width: 100%
+                background-color: #FFF
+            .navbar-nav
+                overflow-y: scroll
+                z-index: 1000
+                margin-left: 0px
+                width: 270px
+                height: 100%
+                background: #ffffff
+                position: fixed
+                top: 0px
+                left: -320px
+                transition: .5s 
+                .nav-close 
+                    font-size: 35px
+                    text-align: left
+                    margin: 15px 0px 15px 25px
+                a 
+                    margin: 15px 35px
+                .nav-item
+                    font-weight: 400
+                    font-size: 18px
+                    margin-left: 10%
+                    padding: 3% 5%
+                    color:#000
+                    text-align: left
+                    border-bottom: 2px solid #F5F5F5
+                    width: 75%
+                    a   
+                        overflow: hidden
+                        font-size: 18px 
+                        margin: 15px 0px
+                        padding: 0px
+                        vertical-align: left
+                        position: static
+                        color: #000 !important
+                    #sd-navbardrop
+                        padding-left: 50%
+                        margin: 0px
+                        display: inline-block !important
+                    .dropdown-menu
+                        border: 0px solid rgba(0,0,0,.15) !important
+                        .dropdown-item
+                            padding: 5px 10px
+                    #nav-login
+                        color: 	#209CFF
+                
+            .menu--open
+                left: 0
+        .nav-bg
+            position: fixed
+            background-color: #000
+            top: 0
+            left: 0
+            opacity: 0.6
+            z-index: 500
+            height: 100%
+            width: 100%
+            display: none
+        .nav-close
+
+    .banner
+        padding-bottom: 0em
+        .carousel-inner
+            margin-top: 65px
+            .carousel-item
+                .bg
+                    height: 400px
+                .banner-container
+                    .text
+                        text-align: center
+                        margin-left: 0%
+                        margin-top: -10%
+                        h1
+                            font-size: 36px
+                            font-weight: 400
+                        p 
+                            font-size: 16px
+                            font-weight: 200
+                            max-width: 500px
+        #gxc-banner
+            .carousel-inner
+                .carousel-item
+                    .bg
+                        height: 500px
+
+//gxc-tab
+.gxc-tab
+    .tab-wrap
+        display: table
+        border-radius: 20px !important
+        &:hover
+            -webkit-box-shadow: 0.4px 0.8rem 1.2rem rgba(0, 0, 0, 0.25)
+            box-shadow: 0.4px 0.4rem 1.2rem rgba(0, 0, 0, 0.25)
+        .nav-tabs
+            border-top-left-radius: 20px
+            border-bottom-left-radius: 20px
+            display: table-cell
+            vertical-align: top
+            text-align: left
+            width: 25%
+            background: #FAFAFA
+            padding: 0%
+            li
+                .button
+                    color: #000
+                    padding: 15% 20% 
+                    h2
+                        font-size: 28px
+                        transition: 1s
+                &:hover
+                    background: #FFF
+                    border-top-left-radius: 20px
+                    border-bottom-left-radius: 20px
+                    -webkit-box-shadow: 0.4px 0.8rem 1.2rem rgba(0, 0, 0, 0.25)
+                    box-shadow: 0.4px 0.4rem 1.2rem rgba(0, 0, 0, 0.25)
+                    transition: all 0.5s
+        a.active li
+            background: #FFF
+            border-top-left-radius: 20px
+            border-bottom-left-radius: 20px
+            -webkit-box-shadow: 0.4px 0.8rem 1.2rem rgba(0, 0, 0, 0.25)
+            box-shadow: 0.4px 0.4rem 1.2rem rgba(0, 0, 0, 0.25)
+        .tab-content
+            min-width: 870px
+            background: #FAFAFA
+            display: table-cell
+            position: relative
+            .tab-pane
+                width: 100%
+                min-height: 600px 
+                &.active
+                    background: #FFF
+                    -webkit-box-shadow: 0.4px 0.8rem 1.2rem rgba(0, 0, 0, 0.25)
+                    box-shadow: 0.4px 0.4rem 1.2rem rgba(0, 0, 0, 0.25)
+
+// card_d
+.card_d
+    .card
+        width: 100%
+        min-width: 270px
+        max-height: 300px
+        .card-bg
+            -webkit-transition: 0.35s
+            transition: 0.35s
+        .card-text
+            margin-top: 0px
+            z-index: 1000
+            padding: 15px 10px
+            font-size: 22px
+            background: #FFF
+            width: 100%
+            -webkit-transition:  0.35s
+            transition:  0.35s
+            h2
+                padding: 12px 0px
+                font-weight: 500
+                font-size: 32px
+                -webkit-transition:  0.35s
+                transition:  0.35s
+            ul 
+                padding-top: 3%
+                opacity: 0 !important
+                li 
+                    list-style-type: none
+                    padding: 5px 0px
+                    font-size: 22px
+                    img 
+                        padding-right: 10px
+                        margin-top: -5px
+                    a
+                        color: #808080 
+            .gxc-more
+                position: absolute
+                z-index: 1000
+                opacity: 0 !important
+                font-size: 20px
+                font-weight: 700
+                color: #1F9CFF
+                margin-left: 40px
+                margin-top: 30px                
+.card_d
+    .card:hover
+        .card-bg
+            img
+                box-shadow: 0px 15px 25px #D2D3D4
+                transform: translate3d(0,0px,0) 
+                -moz-transition-duration: 0.5s
+                -webkit-transition-duration: 0.5s
+                -o-transition-duration: 0.5s
+        .card-text
+            -webkit-transform: translateY(-250px)
+            -ms-transform: translateY(-250px)
+            transform: translateY(-250px)
+            -moz-transition-duration: 0.7s
+            -webkit-transition-duration: 0.7s
+            -o-transition-duration: 0.7s
+            h2
+                opacity: 0 !important
+                -moz-transition-duration: 0.5s 
+                -webkit-transition-duration: 0.5s
+                -o-transition-duration: 0.5s
+            ul 
+                opacity: 1 !important
+            .gxc-more
+                opacity:1 !important 
+                transition-delay: .4s
+                -webkit-transform: translateY(-30px)
+                -ms-transform: translateY(-30px)
+                transform: translateY(-30px)
+                -moz-transition-duration: 0.7s
+                -webkit-transition-duration: 0.7s
+                -o-transition-duration: 0.7s
+    .card
+        .card-text
+            li:hover
+                a
+                    color: #1F9CFF
+                    text-decoration: none
+            .gxc-more:hover      
+                text-decoration: none
+            .icon path
+            fill: white
+
+            .svg path
+                fill: #FFF
+    .card-bottom
+        height: 15px  
+
+
+// icon_b
+.icon_b
+    .owl-stage-outer
+        margin-left: -5%
+        width: 110%
+        border-radius: 15px
+        padding: 30px 50px 50px 55px
+        .owl-stage
+            .owl-item
+                img 
+                    width: 120px
+                    height: auto
+                h2
+                    font-size: 20px
+                    font-weight: 400
+                    text-align: center
+@media (max-width:575.98px)
+    .card_d
+        .card
+            width: 100%
+            height: auto
+            padding-bottom: 100%
+            .card-text
+                padding-bottom: 100%
+                ul
+                    padding-top: 2% 
+    .card_d
+        .card:hover
+            .card-text
+                -webkit-transform: translateY(-50%)
+                -ms-transform: translateY(-50%)
+                transform: translateY(-50%)
+                -moz-transition-duration: 0.7s
+                -webkit-transition-duration: 0.7s
+                -o-transition-duration: 0.7s
+                .gxc-more
+                    -webkit-transform: translateY(-10%)
+                    -ms-transform: translateY(-10%)
+                    transform: translateY(-10%)
+    .icon_b
+        .owl-stage-outer
+            margin-left: 0px
+            width: 100%
+
+// card_e
+.card_e
+    .gxc-more_b_e
+        margin-left: 86%
+        padding: 2% 0%
+        img 
+            margin-top: -5px
+    .card
+        max-height: 290px 
+        height: 95%
+        width: 100%
+        .img-card
+            min-height: 320px
+            .card-bg
+            .card-text_a_e
+                padding: 25px 30px
+                img
+                    
+                    padding-right: 12px
+                    margin-top: -7px
+                p
+                    padding-top: 8px
+                    font-size: 19px
+        .gxc-more
+            opacity: 0 !important
+            margin-left: 190px
+            margin-top: 80px
+            text-decoration: none
+        .gxc-more:hover
+            color: #000 !important  
+            -moz-transition-duration: 0.5s
+            -webkit-transition-duration: 0.5s
+            -o-transition-duration: 0.5s
+            transition
+.card_e   
+    .img-card:hover
+        .card-text_a_e,.gxc-more
+            -moz-transition-duration: 0.5s
+            -webkit-transition-duration: 0.5s
+            -o-transition-duration: 0.5s
+            transition: 0.5s
+
+        .card-text_a_e
+            -webkit-transform: translateY(-70px)
+            -ms-transform: translateY(-70px)
+            transform: translateY(-70px)
+        .gxc-more
+            opacity: 1 !important
+            -webkit-transform: translateY(-15px)
+            -ms-transform: translateY(-15px)
+            transform: translateY(-15px)
+
+@media (max-width:575.98px)
+    .card_e
+        .gxc-more,.gxc-more_b_e
+            display: table
+            margin-left: auto
+            margin-right: auto
+            padding-bottom: 5%
+        .gxc-more_b_e
+            margin-top: 5%
+        .card
+            min-width: 0px
+            min-height: 0px 
+            height: 100%
+            .img-card
+                .card-text_a_e
+                    h4
+                        font-size: 26px 
+                    img
+                        padding-right: 10px
+                    p
+                        padding-top: 5px 
+                        font-size: 19px 
+                        font-weight: 200
+                .gxc-more
+                    margin-left: 60%
+                    margin-top: 16%
+        .card-bottom
+            height: 15px
+        .img-card:hover
+            .card-bg,.card-text_a_e,.gxc-more
+                -webkit-transform: translateY(0px)
+                -ms-transform: translateY(0px)
+                transform: translateY(0px)
+            .gxc-more
+                opacity: 0 !important         
+@media (max-width:376px) 
+    .card_e
+        .card
+            max-height: 270px
+            .img-card
+                .gxc-more
+                    margin-left: 50%
+                    margin-top: 22%
+        .card-bottom
+            height: 5px
+@media (max-width:321px)
+    .card_e
+        .card
+            max-height: 250px
+            .img-card
+                .card-text
+                    h3
+                        font-size: 24px 
+                    p
+                        font-size: 15px 
+                .gxc-more
+                    margin-left: 45%
+                    margin-top: 35%
+        .card-bottom
+            height: 5px
+
+// contact
+.contact
+    .title-area
+        padding-bottom: 0px
+    .col-md-6,.col-12
+        padding: 0 5px
+    .col-md-6
+        max-width: 250px
+    input
+      &[type=text]
+        font-size: 16px
+        font-weight: 400
+        background: white
+        border: 1px solid #d6d6d6
+        padding: .7rem .7rem
+        border-radius: 4px
+        width: 100%
+        // width: 250px
+        height: 49px
+    input
+      &[type=text]:focus
+        border: 1px solid #209cff
+        outline: none
+    input#companyname
+        width: 100%
+        height: 49px
+        margin-top: 10px
+        max-width: 490px
+    .button
+        background: #209cff
+        border-radius: 100px
+        color: #fafafa
+        padding: .8em 1.8em
+        margin: 25px 0px 0px 0px
+        width: 200px
+        height: 48px
+@media (max-width:575.98px)
+    .contact
+        padding-bottom: 10%
+        .title-area
+            padding-bottom: 5%
+        .col-md-6,.col-12
+            padding: 0 15px
+            max-width: none
+        input
+          &[type=text]
+            display: table
+            margin-left: auto
+            margin-right: auto
+            width: 80%
+            margin-bottom: 10px
+            // max-width: 320px
+            height: 46px
+        input#companyname
+            width: 80%
+            margin-top: 0px
+            height: auto
+            // max-width: 320px
+
+//article_a1
+.article_a1
+    .photo
+        img
+            position: relative
+            min-width: 500px 
+            max-width: 600px 
+            margin-left: 100%
+    h3
+        font-size: 32px
+        margin-left: -105%
+        text-align: left 
+    .text
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15)
+        border-radius: 5px
+        background-color: #FFF
+        margin-top: 3%
+        max-width: 660px
+        height: auto
+        padding: 9% 12% 8% 12%
+        margin-left: -105%
+        p
+            // padding-top: 2%
+            font-weight: 400
+            font-size: 20px
+            margin-bottom: 10% 
+        a 
+            margin-left: 75%
+            position: relative
+//article_a2
+.article_a2
+    .photo
+        img
+            position: relative
+            min-width: 500px 
+            max-width: 600px      
+    h3
+        font-size: 32px
+        text-align: right 
+    .text
+        position: relative
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15)
+        border-radius: 5px
+        background-color: #FFF
+        margin-top: 3%
+        max-width: 660px
+        padding: 9% 12% 8% 12%
+        margin-left: -20%
+        p
+            padding-top: 2%
+            font-weight: 400
+            font-size: 20px
+            margin-bottom: 10% 
+        a 
+            margin-left: 75%
+            position: relative
+@media (max-width:575.98px)
+    .article_a1,.article_a2
+        height: 550px
+        .photo
+            img
+                margin-left: -10%
+                padding-top: 50%
+        h3
+            position: absolute
+            margin-top: -565px
+            font-size: 25px
+            margin-left: 7%
+            z-index: 5
+        .text
+            position: relative
+            top: -600px
+            padding: 8%
+            margin-left: 0%
+            p
+                padding-top: 10%
+                margin-bottom: 25% 
+            a 
+                margin-left: 55%
+                position: relative
+@media (max-width:376px)
+    .article_a1,.article_a2
+        h3
+            position: absolute
+            margin-top: -540px
+        .text
+            top: -580px
+            p
+                padding-top: 15%
+@media (max-width:321px)
+    .article_a1,.article_a2
+        height: 500px
+        .text
+            top: -560px
+            p
+                padding-top: 15%
+            a 
+                margin-left: 45%
+
+//article_a3
+.article_a3
+    .photo
+        img
+            position: relative
+            min-width: 500px 
+            max-width: 600px 
+            margin-left: 100%
+    h3
+        font-size: 32px
+        margin-left: -105%
+        text-align: left
+    .text
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15)
+        border-radius: 5px
+        background-color: #FFF
+        margin-top: 4%
+        max-width: 660px
+        padding: 9% 11% 12% 11%
+        margin-left: -105%
+        p
+            font-weight: 400
+            font-size: 20px
+        a 
+            display: none
+
+//article_a4
+.article_a4
+    .photo
+        img
+            position: relative
+            min-width: 500px 
+            max-width: 600px      
+    h3
+        font-size: 32px
+        text-align: right
+    .text
+        position: relative
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15)
+        border-radius: 5px
+        background-color: #FFF
+        margin-top: 4%
+        min-width: 660px
+        padding: 9% 11% 13% 11%
+        margin-left: -20%
+        p
+            font-weight: 400
+            font-size: 20px
+        a
+            display: none
+@media (max-width:575.98px)
+    .article_a3, .article_a4
+        .photo
+            img
+                margin-left: -10%
+                padding-top: 50%
+        h3
+            position: absolute
+            margin-top: -570px
+            font-size: 25px
+            margin-left: 7%
+            z-index: 5
+        .text
+            width: 93%
+            position: absolute
+            top: -600px
+            padding: 8%
+            margin-left: 0%
+            min-width: 0px
+            margin-top: 0px
+            p
+                padding-top: 10%
+                margin-bottom: 25% 
+            a 
+                margin-left: 55%
+                position: relative
+@media (max-width:376px)
+    .article_a3,.article_a4
+        h3
+            position: absolute
+            margin-top: -540px
+        .text
+            top: -580px
+            max-height: 450px
+            p
+                padding-top: 15%
+@media (max-width:321px)
+    .article_a3,.article_a4
+        h3
+            margin-top: -530px
+        .text
+            width: 91%
+            top: -545px
+            max-height: 440px
+            p
+                padding-top: 10%
+            a 
+                margin-left: 45%
+
+//card_a
+.card_a
+    .container
+        .card
+            min-height: 390px
+            .card-bg
+            .card-text_a_e
+                overflow: hidden
+                margin-top: 160px
+                top: 140px
+                padding: 15px 0px 0px 25px     
+                h4
+                    font-size: 25px
+                    padding: 15px 0px 
+                p
+                    padding: 0px 0px
+                    opacity: 0
+            .gxc-more
+                margin-top: 100px
+                margin-left: 155px
+                opacity: 0     
+                top: 245px     
+.card_a
+    .card:hover
+        border-radius: .8rem !important
+        .card-bg
+            img
+                box-shadow: 0px 15px 25px #D2D3D4
+                transform: translate3d(0,0px,0) 
+                -moz-transition-duration: 0.5s
+                -webkit-transition-duration: 0.5s
+                -o-transition-duration: 0.5s
+        .card-text_a_e
+            padding: 90px 25px 10px 25px
+            -webkit-transform: translateY(-320px)
+            -ms-transform: translateY(-320px)
+            transform: translateY(-320px)
+            -moz-transition-duration: 0.7s
+            -webkit-transition-duration: 0.7s
+            -o-transition-duration: 0.7s
+            p
+                opacity: 1 
+        .gxc-more
+            opacity: 1 
+            transition-delay: .4s
+            -webkit-transform: translateY(-10px)
+            -ms-transform: translateY(-10px)
+            transform: translateY(-10px)
+            -moz-transition-duration: 0.7s
+            -webkit-transition-duration: 0.7s
+            -o-transition-duration: 0.7s
+@media (max-width:575.98px)
+    .card_a
+        .container
+            .card
+                min-width: 275px
+                min-height: 420px
+                height: 95%
+                width: 100%
+                .card-text_a_e
+                    width: 100%
+                    margin-top: 130px
+                    padding: 15px 25px
+                    h4
+
+                        padding: 2% 0px
+                        font-size: 24px
+                        width: 100%
+                    p
+                        padding: 0px 10px 0px 0px
+                        opacity: 1 !important
+                    h4
+                        text-overflow: ellipsis
+                        overflow: hidden
+                        white-space: nowrap
+                        display: inline-block
+                        width: 100%
+                    p
+                        overflow: hidden
+                        text-overflow: ellipsis
+                        display: -webkit-box
+                        -webkit-line-clamp: 2
+                        -webkit-box-orient: vertical
+                    .gxc-more
+                        // position: static
+                        margin-top: 35%
+                        // opacity: 1
+                        // display: table
+                        // width: auto  
+                        // margin-left: auto
+                        // margin-right: auto
+                        margin-left: 200px    
+            .card:hover
+                .card-text_a_e
+                    padding: 130px 25px
+                    // -webkit-transform: none
+                    // -ms-transform: none
+                    // transform: none
+                .gxc-more
+                    // -webkit-transform: none
+                    // -ms-transform: none
+                    // transform: none
+@media (max-width:376px)
+    .card_a
+        .container
+            .card
+                .card-text_a_e
+                    .gxc-more
+                        margin-top: 40%
+                        margin-left: 150px    
+@media (max-width:321px)
+    .card_a
+        .container
+            .card
+                min-width: 275px
+                min-height: 400px
+                height: 95%
+                width: 100%
+                .card-text_a_e
+                    .gxc-more
+                        margin-top: 45%
+                        margin-left: 100px    
+
+//card_b
+.card_b
+    .gxc-more_b_e
+        margin-left: 86%
+        margin-top: 2%
+        img 
+            margin-top: -5px
+    .card
+        min-height: 370px
+        .card-text
+            padding: 20px 35px
+            margin-top: 5px
+            text-align: center
+            max-height: 450px
+            p 
+                padding-top: 5%
+        .gxc-more
+            margin-left: 0%
+            margin-top: 0%
+            top: 310px
+            right: 100px
+@media (max-width:575.98px)
+    .card_b
+        .gxc-more_b_e
+            display: none
+            margin-left: auto
+            margin-right: auto
+        .card
+            min-width: 300px
+            min-height: 375px
+            height: 95%
+            width: 100%
+            .card-text
+                h2
+                    font-size: 30px 
+            .gxc-more
+                position: relative
+                right: 0px 
+                top: 18px 
+                display: table
+                width: auto  
+                margin-left: auto
+                margin-right: auto
+                padding-bottom: 10%
+@media (max-width:321px)
+    .card_b
+        .card
+            min-width: 280px
+            min-height: 350px
+            .gxc-more
+
+                top: 20px !important
+
+//article_b
+.article_b1,.article_b2
+    .text
+        min-height: 180px
+        width: 500px
+        h3
+            font-size: 32px
+            font-weight: 600
+        li 
+            padding-top: 20px
+        .b-padding
+            padding-left: 35px
+    img
+        position: absolute
+        margin-top: -10%
+.article_b1
+    .text
+        margin-left: -80%
+    img
+        margin-left: 120%
+.article_b2
+    .text
+        margin-left: -15%
+    img
+        margin-left: 10%
+@media (max-width:575.98px)
+    .article_b1,.article_b2
+        padding-bottom: 20px
+        .text
+            height: auto
+            width: 80%
+            margin-top: 0% 
+            margin-left: 10%
+            padding-bottom: 0%
+            h3
+                font-size: 24px
+                font-weight: 600
+                padding-bottom: 15px
+            li
+                padding-top: 20px
+            .b-padding
+                padding-left: 0px
+                display: table
+                width: auto  
+                margin-left: auto
+                margin-right: auto
+        img
+            position: relative
+            display: table
+            width: 250px
+            margin-top: 0%
+            margin-left: auto
+            margin-right: auto
+
+//article_c
+.article_c
+    .img
+        img
+            position: absolute
+            margin-left: 125%
+            margin-top: -8%
+    .text
+        min-height: 190px
+        max-width: 500px
+        margin-top: 10%
+        margin-left: -85%
+        p
+            color: #898989
+            padding-top: 5px
+        .gxc-more
+            padding-top: 4%
+            img
+                margin-top: -3%
+@media (max-width:575.98px)
+    .article_c
+        margin-top: 0%
+        .col-12.col-md-6
+            img
+                position: relative
+                display: table
+                width: 80%
+                margin-left: auto
+                margin-right: auto
+            .text
+                position: relative
+                margin-top: 0%
+                display: table
+                width: 80%
+                height: auto
+                min-height: 180px
+                margin-left: auto
+                margin-right: auto
+            .gxc-more
+
+                img
+                    width: 30px
+                    display: inline
+                
+//icon_a
+.icon_a
+    .title-area
+    .card-area
+        padding: 2% 0 0% 0
+        .icon-card
+            padding: 0 20px
+            display: table
+            margin-left: auto
+            margin-right: auto
+            img
+                padding-bottom: 10%
+            h2
+                padding: 3% 0
+@media (max-width:575.98px)
+    .icon_a
+        .title-area
+            padding: 2% 0% 5% 0%
+            max-width: 220px
+            display: table
+            margin-left: auto
+            margin-right: auto
+            h3
+                font-size: 24px
+        .card-area
+            padding: 0% 10%
+            .icon-card
+                max-width: 100%
+                
+//card_c
+.card_c
+    padding-bottom: 3%
+    .button 
+        padding-left: 150px
+    .button button
+        background-color: #D9EBFA
+        transition: background-color 0.3s
+        color: #209CFF
+        height: 240px
+        width: 358px
+        border-radius: 16px
+        border: none
+        background-color: #D9EBFA
+        &:hover
+            background-color: #209CFF
+            transition: background-color 0.3s
+            color: #FFFFFF
+            cursor: pointer
+        
+    .button_2 button
+        background-color: #D9EBFA
+        transition: background-color 0.3s
+        color: #FF874D
+        height: 240px
+        width: 358px
+        border-radius: 16px
+        border: none
+        background-color: #FAE7DD
+        &:hover
+            background-color: #FF874D
+            transition: background-color 0.3s
+            color: #FFFFFF
+            cursor: pointer
+    .button h2, .button_2 h2
+        font-size: 48px
+    button
+        outline: none   
+@media (max-width:575.98px)
+    .card_c
+        .button,.button_2
+            width: 100%
+            padding-left: 0px
+            display: table
+            margin-left: auto
+            margin-right: auto
+            outline: none
+            h2
+                font-size: 32px
+            p 
+                padding: 0 10%
+                font-size: 20px
+            button
+                width: 100%
+                height: 194px
+                outline: none
+        .button_2
+            padding: 5% 0
+
+//icon_c
+.icon_c
+    .icon-area
+        img
+            padding: 0px 15px 
+
+//solution
+.solution
+    .button
+        padding: 30px
+        min-width: 270px
+        h2
+            font-size: 20px
+            text-align: center
+            margin: 0
+            padding: 0
+            color: #050505
+            font-weight: 400
+        p
+            color: #7F7F7F
+            font-size: 20px
+            text-align: center
+            margin: 0
+            padding: 0
+    .tab
+        background-color: #F5F5F5
+        font-weight: 400
+        .tab-wrap
+            display: flex
+            line-height: 3rem
+            -webkit-overflow-scrolling: touch
+            white-space: nowrap
+        a
+            display: inline-block
+            border-bottom: 3px solid transparent
+            -webkit-transition: all .3s
+            -o-transition: all .3s
+            transition: all .3s
+            color: #333
+            opacity: 1
+            padding: 0 .5rem
+            margin: 0 .3rem
+            text-decoration: none
+            .button
+                overflow: break-word
+    .section-tab
+        a.active
+            border-bottom: 3px solid #209cff
+        a:hover
+            h2,p
+                color: #209cff
+        .active:hover 
+            p
+                color: #7F7F7F
+            h2
+                color: #2C2D2C
+    .tab-content
+        .img-area
+            border: 1px #D6D6D6 solid
+            border-radius: 20px
+            // height: 650px
+            // margin-left: -10%
+            width: 100%
+            // min-width: 670px
+            .content-img
+                margin-right: 0%
+                img
+                    width: 99%
+                    // margin: auto
+                    // min-width: 550px
+                    padding: 0%
+                    margin-top: -5%
+                    // margin-left: 5%
+            .content
+                position: relative
+                margin-left: 48%
+                min-width: 200px 
+                margin-top: -5%
+                li
+                    list-style-type: none
+                    img
+                        vertical-align: top
+                    .content-small
+                        display: inline-block
+                        width: 200px
+                        h5
+                            font-weight: 300
+                            font-size: 16px
+                        p 
+                            font-size: 14px
+                            color: #999999
+        .text-area
+            margin-top: 8%
+            // margin-left: -15%
+            width: 550px
+            h3
+                font-size: 32px
+                padding-bottom: 5%
+            ul 
+                width: 475px
+                margin-left: -3%
+                
+                li
+                    padding-bottom: 4%
+            .content-collapse
+                .card
+                    box-shadow: 0rem 0.2rem 0.8rem rgba(0, 0, 0, 0.13)
+                    border: none
+                    &:hover
+                        box-shadow: 0rem 0.2rem 1.5rem rgba(0, 0, 0, 0.2)
+                    .card-header
+                        border: none 
+                        background-color: #FFF
+                        height: 50%
+                        h4
+                            width: 480px
+                            padding: 5% 3% 3% 3%
+                            font-size: 20px
+                            font-weight: 400
+                        .btn
+                            right: 0px
+                            top: 0px
+                            position: absolute
+                        .collapse-icon
+                            width: 24px 
+                            height: 24px 
+                            position: absolute
+                            // position: relative
+                            right: 25px
+                            top: 35px
+                            background-image: url(../img/ic/common/minus.svg)
+                        .collapsed
+                            .collapse-icon
+                                background-image: url(../img/ic/common/plus.svg)
+                    .card-border
+                        width: 500px
+                        border-top: 1px solid rgba(0,0,0,.125)
+                        display: table
+                        margin-left: auto
+                        margin-right: auto
+                    .card-body
+                        ul
+                            li
+                                list-style-type: none
+                                margin-left: -10px 
+@media (max-width:575.98px)
+    .solution
+        .button
+            padding: 5px
+            max-width: 50px
+            h2
+                font-size: 16px
+            p
+                font-size: 16px
+        .nav
+            flex-wrap: nowrap
+        .tab
+            .tab-wrap
+                line-height: 2rem
+                overflow: scroll
+
+        .tab-content
+            padding: 5% 0%
+            .col-lg-6
+                padding-bottom: 4%
+                height: 100%
+            .img-area
+                margin-left: 0%
+                min-width: 100%
+                max-width: 1000px
+                width: 100%
+                .content-img
+                    img
+                        width: 105%
+                        min-width: 0px
+                .content
+                    margin-top: 5px
+                    display: table
+                    margin-left: auto
+                    margin-right: auto
+                    margin-left: 17%
+            .text-area
+                margin-top: 10px
+                margin-left: 0%
+                width: 100%
+                h3
+                    font-size: 26px
+                    padding-bottom: 10px
+                    margin-left: 30px
+                ul 
+                    width: 100%
+                .content-collapse
+                    .card
+                        .card-header
+                            h4
+                                width: 90%
+                            .collapse-icon
+                                right: 25px
+                                top: 27px
+                                background-image: url(../img/ic/common/minus.svg)
+                            .collapsed
+                                .collapse-icon
+                                    background-image: url(../img/ic/common/plus.svg)
+                        .card-border
+                            width: 500px
+                            border-top: 1px solid rgba(0,0,0,.125)
+                            display: table
+                            margin-left: auto
+                            margin-right: auto
+                        .card-body
+                            ul
+                                li
+                                    list-style-type: none
+                                    margin-left: -10px 
+                      
+//sd_article
+.sd_article
+    padding-bottom: 5%
+    .container
+        .title-area
+            text-align: left
+            padding: 10px 0px
+            h2,h4
+                padding-top: 5%
+        .text
+            img 
+                width: 100%
+                
+//price
+.price
+    .mobile
+        display: none 
+
+    .owl-stage-outer
+        .owl-stage
+            float: none
+            margin: 0 auto
+            .owl-item
+                padding: 0 0 20px 0
+    .card
+        width: 370px
+        height: 700px
+        .card-text
+            position: absolute
+            text-align: center
+            top: 15%
+            left: 50%
+            transform: translate(-50%, -50%)
+            color: #FFF
+            font-weight: 200
+        ul 
+            padding-top: 10%
+            li 
+                list-style-type: none
+                img 
+                    top: 0px
+                    width: 35px
+                    display: inline-block
+                    padding-right: 2%
+                    vertical-align: top
+                p 
+                    position: relative
+                    display: inline-block
+                    width: 250px
+        .button
+            position: absolute
+            background: #209cff
+            color: #fafafa
+            width: 85%
+            padding: .8em 5em
+            left: 8%
+            bottom: 5%
+            transform: translate(0%, 0%)
+            border: none
+            &:hover
+                text-decoration: none
+                -webkit-transform: scale(1.04)
+                -ms-transform: scale(1.04)
+                transform: scale(1.04)
+                border: none
+            &:active
+                -webkit-transform: scale(0.94)
+                -ms-transform: scale(0.94)
+                transform: scale(0.94)
+                border: none     
+@media (max-width:575.98px)
+    .price
+        padding-bottom: 1em
+        .owl-stage-outer
+            .owl-stage
+                margin-left: 15px
+                display: inline-flex
+                .owl-item
+                    display: inline
+        .card
+            width: 100%
+            min-width: 320px
+            height: 600px
+            .img-card
+                ul 
+                    height: 380px
+                    overflow-y: scroll
+                    -webkit-scrollbar: none
+                    li
+                        p 
+                            width: 70%
+                .button
+                    border-radius: 100px
+@media (max-width:376px)
+    .price
+        .card
+            min-width: 290px
+            min-height: 600px
+            .card-text
+                top: 13%
+                h2
+                    font-size: 26px
+                p 
+                    font-size: 20px
+            .img-card
+                ul 
+                    height: 380px
+                    overflow-y: scroll
+                    -webkit-scrollbar: none
+                    li
+                        img
+                            max-width: 25px
+                            margin-top: 5px         
+@media (max-width:321px)
+    .price
+        .card
+            min-width: 240px
+            min-height: 550px
+            -webkit-scrollbar: none
+            .card-text
+                top: 12%
+                h2
+                    font-size: 22px
+                p 
+                    font-size: 16px           
+            .img-card
+                ul 
+                    height: 320px
+                    overflow-y: scroll
+                    -webkit-scrollbar: none
+                .button
+                    padding: .8em 3em
+
+//uc_p1_popup
+#uc_p1_popup , #uc_p2_popup
+    .modal-dialog
+        display: table
+        margin-top: 10%
+        margin-left: auto
+        margin-right: auto
+        .modal-content
+            width: 760px 
+            height: 360px 
+            border-radius: 15px
+            img
+                margin: 100px 0px 50px 70px
+        .text-area
+            margin-top: -230px
+            margin-left: 320px
+            h2
+                font-size: 28px
+
+            h3
+                display: table
+                font-size: 20px
+            p
+                font-size: 13px
+                color: #5B5E63
+                padding-top: -50px
+                padding-buttom: -50px
+                
+        .close 
+            font-size: 70px
+            margin-right: 10px
+        button
+            outline: none
+
+@media (max-width:575.98px)
+    #uc_p1_popup , #uc_p2_popup
+        .modal-dialog
+            margin-top: 50%
+            .modal-content
+                width: 375px
+                height: 485px
+            .content
+                margin-bottom: -10%
+                img
+                padding-left: 12%
+                margin-top: -18%
+            .text-area
+                margin-left: 50px
+                margin-top: -15%
+            h2
+                font-size: 28px
+            h3  
+                display: table
+                font-size: 20px
+            p
+                font-size: 10px
+                color: #5B5E63
+
+            .close 
+                font-size: 40px
+                margin: 0px 10px 10px 0px
+    #uc_p1_popup .modal-dialog .modal-content h2, #uc_p2_popup .modal-dialog .modal-content h2
+          margin-bottom: 10%
+    #uc_p1_popup .modal-dialog .modal-content p, #uc_p2_popup .modal-dialog .modal-content p
+          margin-bottom: 10%
+    #uc_p1_popup .modal-dialog .modal-content h2, #uc_p2_popup .modal-dialog .modal-content img
+          padding: -20%
+@media (max-width:321px)
+    #uc_p1_popup , #uc_p2_popup
+        .modal-dialog
+            margin-top: 50%
+            .modal-content
+                width: auto
+                height: auto
+            .content
+                margin-bottom: -10%
+                img
+                padding-left: 2%
+                margin-top: -18%
+            .text-area
+                width: auto
+                margin-left: 20px
+                margin-top: -15%
+            h2
+                font-size: 28px
+            h3  
+                display: table
+                font-size: 20px
+            p
+                font-size: 10px
+                color: #5B5E63
+            .close 
+                font-size: 40px
+                margin: 0px 10px 10px 0px
+
+    #uc_p1_popup .modal-dialog .modal-content h2, #uc_p2_popup .modal-dialog .modal-content h2
+          margin-bottom: 10%
+    #uc_p1_popup .modal-dialog .modal-content p, #uc_p2_popup .modal-dialog .modal-content p
+          margin-bottom: 10%
+    #uc_p1_popup .modal-dialog .modal-content h2, #uc_p2_popup .modal-dialog .modal-content img
+          padding: -20%
