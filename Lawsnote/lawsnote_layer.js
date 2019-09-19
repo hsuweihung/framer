@@ -1,4 +1,4 @@
-import { Data, animate, Override, Animatable } from "./node_modules/framer"
+import { Data, animate, Override, Animatable } from "framer"
 
 const data = Data({
     currentTab: null,
