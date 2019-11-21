@@ -6,6 +6,8 @@ const data = Data({
     tabLeft: Animatable(0),
     shortCutHide: false,
     notiHide: true,
+    balanceShow: true,
+    balanceHide: false,
 })
 
 let tabArray = []
@@ -60,5 +62,34 @@ export const tabContianer: Override = props => {
 export const tabView: Override = () => {
     return {
         left: data.tabLeft,
+    }
+}
+export const bnShowBalance: Override = () => {
+    return {
+        onTap() {
+            data.balanceShow = false
+            data.balanceHide = true
+        },
+    }
+}
+
+export const bnHideBalance: Override = () => {
+    return {
+        onTap() {
+            data.balanceHide = false
+            data.balanceShow = true
+        },
+    }
+}
+
+export const balanceH: Override = () => {
+    return {
+        visible: data.balanceHide,
+    }
+}
+
+export const balanceS: Override = () => {
+    return {
+        visible: data.balanceShow,
     }
 }
